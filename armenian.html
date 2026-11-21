@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+
+<html lang="hy">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="theme-color" content="#ffffff">
+ <title>Չեխերեն լեզու. ճիշտ ուղի դեպի կրթություն Չեխիայում և աշխատանք ԵՄ-ում</title>
+  
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+ <meta name="description" content="Չեխերենի համակարգված պատրաստություն դպրոցականների, ուսանողների և մեծահասակների համար Երևանում և օնլայն։ Դասավանդում է Պրահայի տնտեսագիտական համալսարանի (VŠE) դասախոսը՝ PhD։">
+ <meta name="keywords" content="չեխերեն Երևան, չեխերենի դասընթացներ, ուսում Չեխիայում, VŠE Պրահա, Կառլոսի համալսարան, պատրաստություն Չեխիայի համալսարան ընդունվելու համար">
+
+ <meta property="og:title" content="Չեխերեն լեզու. ճիշտ ուղի դեպի կրթություն Չեխիայում և աշխատանք ԵՄ-ում">
+ <meta property="og:description" content="Համակարգված պատրաստություն սկզբնական մակարդակից մինչև ընտրած ծրագրի լեզուն։ Դասեր Երևանում և օնլայն։">
+ <meta property="og:type" content="website">
+ <meta property="og:locale" content="hy_AM">
+ <link rel="alternate" hreflang="ru" href="index.html">
+ <link rel="alternate" hreflang="en" href="english.html">
+ <link rel="alternate" hreflang="hy" href="armenian.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Serif+Armenian:wght@500;600;700&family=Noto+Sans+Armenian:wght@400;600;700&display=swap" rel="stylesheet">
+
+ <style>
+ 
+ :root {
+ --bg-page: #ffffff; /* ФОН САЙТА */
+ --bg-alt: #f5f7fb; /* фон секций через одну и подвала */
+ --card-bg: #ffffff; /* фон карточек */
+ --calc-bg: #eef3fa; /* фон калькулятора */
+ --note-bg: #eff6ff; /* фон блока «Важно знать» */
+ --caption-bg: #ffffff; /* фон подписи в галерее */
+ --veil-strong: 0.94; /* белая завеса слева (0–1) */
+ --veil-weak: 0.45; /* белая завеса справа (0–1) */
+
+ --primary: #0f2c59; /* основной тёмно-синий */
+ --primary-light: #1d4ed8; /* синий */
+ --accent: #d90429; /* красный акцент */
+ --accent-hover: #b90322; /* красный при наведении */
+ --highlight: #b45309; /* золото-коричневый */
+ --title-red: #d7141a; /* красный заголовков */
+ --module-1: #0f2c59; /* полоска сверху модуля 01 */
+ --module-2: #1d4ed8; /* полоска сверху модуля 02 */
+ --module-3: #b45309; /* полоска сверху модуля 03 */
+
+ --text-dark: #0f172a; /* основной текст */
+ --text-muted: #334155; /* вторичный текст */
+ --border: #dde3ee; /* линии и рамки */
+
+ --font-display: "Cormorant Garamond", "Noto Serif Armenian", Georgia, "Times New Roman", serif; /* заголовки */
+ --font-body: "Noto Sans Armenian", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; /* основной текст */
+
+ --shadow: 0 10px 30px -8px rgba(15, 44, 89, 0.12);
+ --shadow-hover: 0 20px 40px -10px rgba(15, 44, 89, 0.20);
+ --radius: 16px;
+ }
+
+ 
+ * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+ body {
+ font-family: var(--font-body);
+ color: var(--text-dark); /* основной текст */
+ background-color: var(--bg-page); /* ФОН САЙТА */
+ line-height: 1.6;
+ overflow-x: hidden;
+ }
+ @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+ @keyframes pulseGlow {
+ 0%, 100% { box-shadow: 0 0 0 0 rgba(217, 4, 41, 0.35); }
+ 50% { box-shadow: 0 0 0 12px rgba(217, 4, 41, 0); }
+ }
+ .reveal { opacity: 0; transform: translateY(28px); transition: all 0.7s cubic-bezier(0.22, 1, 0.36, 1); }
+ .reveal.active { opacity: 1; transform: translateY(0); }
+ .container { max-width: 1180px; margin: 0 auto; padding: 0 20px; }
+ section { padding: 80px 0; }
+ .section-alt { background-color: var(--bg-alt); } /* фон секции через одну */
+ .section-header { text-align: center; max-width: 720px; margin: 0 auto 54px; }
+ .section-header h2 {
+ font-family: var(--font-display); /* шрифт заголовков секций */
+ font-size: 2.4rem; color: var(--primary); /* цвет заголовков секций */
+ font-weight: 700; margin-bottom: 14px; line-height: 1.15;
+ }
+ .section-header p { color: var(--text-muted); font-size: 1.05rem; } /* подзаголовки секций */
+
+ 
+ header {
+ position: sticky; top: 0; z-index: 1000;
+ background: rgba(255, 255, 255, 0.94); /* фон шапки */
+ backdrop-filter: blur(12px);
+ border-bottom: 1px solid var(--border); /* линия под шапкой */
+ }
+ .nav-inner { display: flex; justify-content: space-between; align-items: center; height: 76px; }
+ .logo {
+ display: flex; align-items: center; gap: 10px; text-decoration: none;
+ color: var(--primary); /* название в шапке */
+ font-family: var(--font-display); font-weight: 700; font-size: 1.4rem;
+ }
+ .logo-badge { /* квадратик CZ: половина синяя, половина красная */
+ background: linear-gradient(135deg, var(--primary) 50%, var(--accent) 50%);
+ color: #ffffff; width: 36px; height: 36px; border-radius: 10px;
+ display: flex; align-items: center; justify-content: center;
+ font-family: var(--font-body); font-size: 0.9rem; font-weight: 900;
+ }
+ .nav-links { display: flex; gap: 26px; align-items: center; }
+ .nav-links a { text-decoration: none; color: var(--text-dark); font-weight: 500; font-size: 0.95rem; transition: color 0.2s; }
+ .nav-links a:hover { color: var(--accent); } /* ссылки меню при наведении */
+ .lang-switcher {
+ display: flex; align-items: center; gap: 2px; padding: 3px;
+ background: var(--bg-alt); border: 1px solid var(--border); border-radius: 99px;
+ }
+ .lang-btn {
+ border: none; background: transparent; padding: 5px 11px; border-radius: 99px;
+ font-size: 0.8rem; font-weight: 700; cursor: pointer;
+ color: var(--text-muted); transition: all 0.25s ease;
+ }
+ .lang-btn.active { background: var(--primary); color: #ffffff; } /* активный язык */
+ .lang-btn:hover:not(.active) { color: var(--primary); }
+ 
+
+
+ .hero {
+ position: relative; padding: 90px 0 100px;
+ overflow: hidden;
+ background-color: var(--bg-alt); /* запасной фон, если фото не загрузилось */
+ }
+ .text-red { color: var(--title-red); } /* красный текст: «Чешский язык» и красные заголовки */
+ .hero-bg { /* ФОТО 1: фото Праги на фоне первого экрана */
+ position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+ object-fit: cover; object-position: center 40%;
+ z-index: 0;
+ }
+ .hero-veil { /* белая завеса поверх фото: делает текст читаемым */
+ position: absolute; inset: 0; z-index: 1;
+ background: linear-gradient(90deg,
+ rgba(255, 255, 255, var(--veil-strong)) 0%,
+ rgba(255, 255, 255, 0.75) 50%,
+ rgba(255, 255, 255, var(--veil-weak)) 100%);
+ }
+ .hero-grid { position: relative; z-index: 2; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 48px; align-items: center; }
+ .eyebrow { /* маленькая плашка над заголовком */
+ display: inline-flex; align-items: center; gap: 8px;
+ background: #ffffff; color: var(--primary-light); /* фон и текст плашки */
+ border: 1px solid #bfdbfe; /* рамка плашки */
+ padding: 6px 14px; border-radius: 99px; font-size: 0.85rem; font-weight: 700; margin-bottom: 20px;
+ }
+ .hero h1 {
+ font-family: var(--font-display); /* шрифт заголовка */
+ font-size: 3.6rem; line-height: 1.05; font-weight: 700;
+ color: var(--primary); /* цвет «Чешский язык» */
+ margin-bottom: 22px; letter-spacing: -0.01em;
+ }
+ .hero-title-sub { /* «Верный путь к образованию в Чехии и работе в ЕС» */
+ display: block; font-size: 1.9rem; font-weight: 600;
+ color: var(--accent); /* цвет второй строки заголовка: красный */
+ margin-top: 10px; line-height: 1.25;
+ }
+ .hero-sub { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 32px; max-width: 600px; } /* описание под заголовком */
+ .hero-cta-group { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 36px; }
+ .btn {
+ display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+ padding: 15px 28px; border-radius: 12px; font-weight: 700; font-size: 1rem;
+ text-decoration: none; cursor: pointer; border: none; transition: all 0.25s ease;
+ }
+ .btn-primary { background: var(--accent); color: #ffffff; animation: pulseGlow 2.8s infinite; } /* главная кнопка: фон и текст */
+ .btn-primary:hover { background: var(--accent-hover); transform: translateY(-2px); }
+ .btn-secondary { background: #ffffff; color: var(--primary); border: 2px solid var(--primary); } /* вторичная кнопка */
+ .btn-secondary:hover { background: var(--primary); color: #ffffff; }
+ .hero-stats {
+ display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+ padding-top: 24px; border-top: 1px solid var(--border); /* линия над цифрами */
+ }
+ .stat-item strong { display: block; font-size: 1.4rem; color: var(--primary); font-weight: 800; } /* цифры статистики */
+ .stat-item span { font-size: 0.85rem; color: var(--text-muted); } /* подписи к цифрам */
+
+ /* Белая карточка справа на первом экране */
+ .hero-card {
+ background: var(--card-bg); color: var(--text-dark); /* фон и текст карточки */
+ border-radius: 24px; padding: 32px;
+ box-shadow: var(--shadow-hover); border: 1px solid var(--border);
+ position: relative; animation: float 6s ease-in-out infinite;
+ }
+ .hero-card-badge { /* ярлык сверху карточки */
+ position: absolute; top: -14px; right: 24px;
+ background: var(--primary); color: #ffffff; /* фон и текст ярлыка */
+ padding: 6px 14px; border-radius: 99px; font-size: 0.8rem; font-weight: 700;
+ }
+ .hero-card-title { font-family: var(--font-display); color: var(--primary); font-size: 1.6rem; margin-bottom: 6px; font-weight: 700; text-align: center;} /* заголовок карточки */
+ .hero-card-desc { color: var(--text-muted); font-size: 0.92rem; text-align: center; } /* описание карточки */
+ .uni-list { list-style: none; margin: 18px 0 0; }
+ .uni-list li {
+ display: flex; align-items: flex-start; gap: 12px; padding: 12px 0;
+ border-bottom: 1px dashed var(--border); color: var(--text-dark);
+ }
+ .uni-list li:last-child { border-bottom: none; }
+ .uni-list strong { color: var(--text-dark); } /* названия вузов */
+ .uni-list small { display: block; font-size: 0.85rem; color: var(--text-muted); } /* описания вузов */
+ .check-icon {
+ width: 24px; height: 24px; border-radius: 50%;
+ background: #dcfce7; color: #15803d; /* фон кружка и цвет галочки */
+ display: flex; align-items: center; justify-content: center;
+ font-weight: 900; font-size: 0.85rem; flex-shrink: 0; margin-top: 2px;
+ }
+
+ 
+ .hero-slideshow {
+ position: absolute; inset: 0; z-index: 0;
+ }
+ .hero-slideshow img {
+ position: absolute; inset: 0; width: 100%; height: 100%;
+ object-fit: cover; object-position: center 40%;
+ opacity: 0;
+ animation: slideFade 24s infinite; /* ЦИКЛ: 24 секунды на три кадра */
+ }
+ .hero-slideshow img:nth-child(2) { animation-delay: -8s; } /* второй кадр: сдвиг 8 секунд */
+ .hero-slideshow img:nth-child(3) { animation-delay: -16s; } /* третий кадр: сдвиг 16 секунд */
+ @keyframes slideFade {
+ 0% { opacity: 0; }
+ 4% { opacity: 1; } /* скорость появления: около 1 секунды */
+ 30% { opacity: 1; } /* время, пока кадр полностью виден: около 7 секунд */
+ 34% { opacity: 0; } /* скорость исчезновения: около 1 секунды */
+ 100% { opacity: 0; }
+ }
+ 
+ .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+ .gallery-card {
+ background: var(--card-bg); /* фон карточки галереи */
+ border: 1px solid var(--border); /* рамка карточки галереи */
+ border-radius: var(--radius); overflow: hidden;
+ box-shadow: var(--shadow); transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+ .gallery-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+ .gallery-card img {
+ display: block; width: 100%; height: 230px; object-fit: cover;
+ background: #e2e8f0; /* серый фон, пока фото не вставлено */
+ }
+ .gallery-card figcaption { padding: 18px 20px 20px; background: var(--caption-bg); } /* фон подписи */
+ .gallery-card h3 { font-family: var(--font-display); font-size: 1.4rem; color: var(--primary); margin-bottom: 4px; font-weight: 700; } /* название места */
+ .gallery-card p { font-size: 0.92rem; color: var(--text-muted); } /* описание места */
+
+
+
+ .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+ .card {
+ background: var(--card-bg); border-radius: var(--radius); padding: 30px;
+ border: 1px solid var(--border); box-shadow: var(--shadow);
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+ .card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+ .card-icon {
+ width: 50px; height: 50px; border-radius: 14px;
+ background: #eff6ff; color: var(--primary-light); /* фон и цвет значка */
+ display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 20px;
+ }
+ .card h3 { font-size: 1.2rem; color: var(--primary); margin-bottom: 10px; } /* заголовок карточки */
+ .card p { color: var(--text-muted); font-size: 0.96rem; } /* текст карточки */
+
+ 
+ 
+ .calc-box {
+ background: var(--calc-bg); /* фон блока калькулятора */
+ border: 1px solid var(--border); border-radius: 24px; padding: 44px;
+ display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;
+ box-shadow: var(--shadow);
+ }
+ .calc-controls h2 { font-family: var(--font-display); font-size: 2.2rem; color: var(--primary); margin-bottom: 12px; line-height: 1.15; font-weight: 700; } /* заголовок калькулятора */
+ .calc-controls > p { color: var(--text-muted); margin-bottom: 24px; font-size: 0.95rem; } /* описание */
+ .calc-controls label { display: block; font-weight: 600; margin-bottom: 8px; font-size: 0.95rem; color: var(--text-dark); } /* подписи полей */
+ .calc-select {
+ width: 100%; padding: 14px 16px; border-radius: 12px;
+ border: 1px solid #cbd5e1; /* рамка поля */
+ background: #ffffff; /* фон поля */
+ color: var(--text-dark); /* текст в поле */
+ font-size: 1rem; font-weight: 600; margin-bottom: 20px; outline: none;
+ font-family: var(--font-body);
+ }
+ .calc-select:focus { border-color: var(--primary-light); } /* рамка поля в фокусе */
+ .calc-note { font-size: 0.8rem; color: var(--text-muted); margin-top: 14px; }
+ .calc-result {
+ background: #ffffff; /* фон панели расчёта */
+ border: 1px solid var(--border); border-radius: 18px; padding: 28px;
+ }
+ .calc-result-title { font-weight: 700; color: var(--primary); margin-bottom: 12px; font-size: 1.1rem; } /* заголовок расчёта */
+ /* Строка: название слева (растягивается), сумма справа (фиксированная ширина). Поэтому суммы стоят ровно. */
+ .calc-row {
+ display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center;
+ padding: 12px 0; border-bottom: 1px solid var(--border); /* линия между строками */
+ font-size: 0.95rem; color: var(--text-muted); /* название строки */
+ }
+ .calc-row strong { color: var(--text-dark); text-align: right; white-space: nowrap; } /* сумма в строке */
+ .calc-row-total {
+ border-bottom: none; border-top: 2px solid var(--primary); /* линия над итогом */
+ margin-top: 6px; padding-top: 16px;
+ font-size: 1.1rem; font-weight: 800; color: var(--primary); /* название итога */
+ }
+ .calc-row-total strong { color: var(--highlight); font-size: 1.25rem; } /* сумма итога: золото-коричневый */
+
+ 
+ .timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+ .step-card {
+ background: var(--card-bg); border-radius: 16px; padding: 24px;
+ border: 1px solid var(--border); /* рамка карточки модуля */
+ }
+ .step-card h3 { color: var(--primary); margin-bottom: 8px; font-size: 1.15rem; } /* название модуля */
+ .step-card p { font-size: 0.92rem; color: var(--text-muted); } /* описание модуля */
+ .step-num { /* плашка «Модуль 1 · Уровень A1» */
+ display: inline-block; background: var(--primary); color: #ffffff; /* фон и текст плашки */
+ font-weight: 800; font-size: 0.8rem; padding: 4px 12px; border-radius: 99px; margin-bottom: 12px;
+ }
+
+ 
+ .team-grid { display: grid; grid-template-columns: 1fr; gap: 30px; } /* одна карточка преподавателя на всю ширину */
+ .leader-card {
+ background: var(--card-bg); border-radius: 20px; padding: 36px;
+ border: 1px solid var(--border); box-shadow: var(--shadow);
+ }
+ .leader-role { font-size: 0.85rem; font-weight: 700; color: var(--accent); text-transform: uppercase; } /* роль преподавателя: красный */
+ .leader-name { font-family: var(--font-display); font-size: 2.1rem; color: var(--primary); margin: 6px 0; font-weight: 700; line-height: 1.1; } /* имя преподавателя */
+ .leader-sub { color: var(--text-muted); font-weight: 500; } /* подпись под именем */
+ .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 22px; }
+ .tag {
+ background: #eef3fa; color: var(--primary); /* фон и текст тегов-достижений */
+ padding: 5px 12px; border-radius: 8px; font-size: 0.82rem; font-weight: 700;
+ }
+ 
+ .curator-card {
+  background: linear-gradient(180deg, #ffd500 0%, #ffffff 100%);
+  border-radius: 20px;
+  padding: 32px;
+  border: 1px solid #fde68a;
+  box-shadow: var(--shadow);
+}
+.curator-role {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--highlight);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-align: center; /* выравнивание по центру */
+}
+.curator-title {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  color: var(--primary);
+  margin: 8px 0 18px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center; /* выравнивание по центру */
+}
+.price-compare-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  font-size: 0.9rem;
+}
+.price-compare-table th {
+  padding: 14px 14px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+.price-compare-table th.col-prague {
+  background: #f1f5f9;
+  color: #475569;
+  width: 48%;
+  border-right: 1px solid #e2e8f0;
+}
+.price-compare-table th.col-yerevan {
+  background: #0f294a;
+  color: #ffffff;
+  width: 52%;
+}
+.yerevan-badge {
+  display: inline-block;
+  background: #ffd500;
+  color: #0f294a;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-left: 6px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+.price-compare-table td {
+  padding: 12px 14px;
+  vertical-align: top;
+  border-top: 1px solid #e2e8f0;
+  line-height: 1.38;
+}
+.price-compare-table td.col-prague {
+  background: #f8fafc;
+  color: #64748b;
+  border-right: 1px solid #e2e8f0;
+}
+.price-compare-table td.col-yerevan {
+  background: #ffffff;
+  color: #0f172a;
+  font-weight: 500;
+}
+.price-label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #94a3b8;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+.col-yerevan .price-label {
+  color: #1d4ed8;
+}
+.price-big-bad {
+  font-weight: 700;
+  color: #334155;
+  font-size: 0.96rem;
+}
+.price-big-good {
+  font-weight: 800;
+  color: #0f294a;
+  font-size: 1.05rem;
+}
+.price-total-row td.col-prague {
+  background: #e2e8f0;
+  color: #334155;
+  font-weight: 700;
+}
+.price-total-row td.col-yerevan {
+  background: #fef9c3;
+  color: #0f294a;
+  font-weight: 800;
+}
+.compare-note {
+  margin-top: 14px;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+@media (max-width: 540px) {
+  .curator-card { padding: 20px 16px; }
+  .price-compare-table th, .price-compare-table td { padding: 10px 9px; font-size: 0.82rem; }
+}
+ 
+
+ .modules-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+ .module-card {
+ background: var(--card-bg); /* фон карточки модуля */
+ border: 1px solid var(--border); /* рамка карточки модуля */
+ border-top: 5px solid var(--module-color); /* полоска сверху: цвет задаётся классом module-1/2/3 */
+ border-radius: var(--radius); padding: 30px; box-shadow: var(--shadow);
+ }
+ .module-1 { --module-color: var(--module-1); }
+ .module-2 { --module-color: var(--module-2); }
+ .module-3 { --module-color: var(--module-3); }
+ .module-num { font-size: 0.8rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--module-color); margin-bottom: 10px; } /* «Модуль 01» */
+ .module-title { font-family: var(--font-display); font-size: 1.6rem; line-height: 1.15; color: var(--primary); font-weight: 700; margin-bottom: 10px; } /* название модуля */
+ .module-sub { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 14px; } /* подзаголовок модуля */
+ .module-list { list-style: none; }
+ .module-list li { display: flex; gap: 12px; padding: 12px 0; border-top: 1px dashed var(--border); color: var(--text-dark); font-size: 0.94rem; } /* пункты модуля */
+ .module-list strong { color: var(--primary); } /* выделенные начала пунктов */
+ .module-check { color: var(--module-color); font-weight: 900; flex-shrink: 0; } /* галочка в пункте */
+
+ 
+ .uni-card-link { display: block; text-decoration: none; color: inherit; }
+ .uni-link { color: var(--primary-light); text-decoration: none; border-bottom: 1px dashed currentColor; } /* синие ссылки на сайты вузов */
+ .uni-link:hover { color: var(--accent); }
+ .other-unis {
+ margin-top: 32px; background: var(--card-bg); /* фон блока «Другие вузы» */
+ padding: 24px 28px; border-radius: 18px; box-shadow: var(--shadow);
+ border-left: 5px solid var(--title-red); /* красная полоска слева */
+ }
+ .other-unis h3 { font-size: 1.15rem; color: var(--primary); margin-bottom: 8px; } /* заголовок блока */
+ .other-unis p { color: var(--text-muted); font-size: 0.96rem; line-height: 1.6; } /* текст блока */
+
+ .ben-kicker { color: var(--title-red); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.85rem; margin-bottom: 10px; }
+
+ 
+ .booking-wrapper {
+ background: var(--card-bg); border-radius: 24px; padding: 44px;
+ border: 1px solid var(--border); box-shadow: var(--shadow-hover);
+ display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: center;
+ }
+ .booking-title { font-family: var(--font-display); font-size: 2.4rem; color: var(--primary); margin-bottom: 14px; font-weight: 700; line-height: 1.1; }
+ .booking-text { color: var(--text-muted); margin-bottom: 24px; }
+ .contacts-box { /* блок с контактами */
+ background: var(--bg-alt); /* фон блока контактов */
+ padding: 20px; border-radius: 14px; border: 1px solid var(--border);
+ }
+ .contacts-title { font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+ .contacts-box p { margin-bottom: 6px; color: var(--text-dark); }
+ .form-group { margin-bottom: 16px; }
+ .form-group label { display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 6px; color: var(--text-dark); }
+ .form-control {
+ width: 100%; padding: 13px 16px; border-radius: 10px;
+ border: 1px solid #cbd5e1; /* рамка полей формы */
+ background: #ffffff; color: var(--text-dark); /* фон и текст полей формы */
+ font-size: 1rem; font-family: var(--font-body); transition: border-color 0.2s;
+ }
+ .form-control:focus { outline: none; border-color: var(--primary-light); } /* рамка поля в фокусе */
+ .form-note { font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 10px; }
+
+ .info-note { /* блок «Важно знать» под формой записи */
+ margin-top: 40px; background: var(--note-bg); /* фон блока пояснений */
+ border: 1px solid #bfdbfe; /* рамка блока пояснений */
+ border-radius: 20px; padding: 32px 36px;
+ }
+ .info-note h3 { font-family: var(--font-display); font-size: 1.6rem; color: var(--primary); margin-bottom: 8px; font-weight: 700; } /* заголовки пояснений */
+ .info-note p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 18px; } /* текст пояснений */
+ .info-note p:last-child { margin-bottom: 0; }
+
+ 
+ footer {
+ background: var(--bg-alt); /* фон подвала */
+ border-top: 1px solid var(--border); /* линия над подвалом */
+ color: var(--text-muted); /* текст подвала */
+ padding: 56px 0 32px;
+ }
+ .footer-grid {
+ display: flex; justify-content: space-between; flex-wrap: wrap; gap: 24px;
+ padding-bottom: 28px; border-bottom: 1px solid var(--border);
+ }
+ .footer-brand { font-family: var(--font-display); color: var(--primary); font-weight: 700; font-size: 1.6rem; margin-bottom: 8px; } /* название в подвале */
+ .footer-links a { color: var(--primary); text-decoration: none; display: block; margin-bottom: 8px; font-weight: 500; } /* ссылки в подвале */
+ .footer-links a:hover { color: var(--accent); }
+ .footer-links-title { font-weight: 700; color: var(--text-dark); margin-bottom: 10px; }
+ .footer-bottom { padding-top: 20px; font-size: 0.82rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+
+ 
+ @media (max-width: 920px) {
+ .hero-grid, .calc-box, .team-grid, .booking-wrapper { grid-template-columns: 1fr; }
+ .grid-3, .modules-grid { grid-template-columns: 1fr; }
+ .gallery-grid { grid-template-columns: 1fr 1fr; }
+ .timeline { grid-template-columns: 1fr 1fr; }
+ .nav-links { display: none; }
+ .hero h1 { font-size: 2.8rem; }
+ .hero-title-sub { font-size: 1.5rem; }
+ .hero-veil { background: rgba(255, 255, 255, 0.86); } /* на телефоне фото чуть приглушено сильнее */
+ }
+ @media (max-width: 540px) {
+ .timeline, .gallery-grid { grid-template-columns: 1fr; }
+ .hero-stats { grid-template-columns: 1fr; }
+ .calc-box, .booking-wrapper { padding: 26px; }
+ .info-note { padding: 24px; }
+ .hero h1 { font-size: 2.3rem; }
+ }
+ @media (prefers-reduced-motion: reduce) {
+ .btn-primary, .hero-card { animation: none; }
+ .reveal { transition: none; opacity: 1; transform: none; }
+ }
+ </style>
+</head>
+<body>
+
+<header>
+ <div class="container nav-inner">
+ <a href="armenian.html" class="logo">
+ <div class="logo-badge">CZ</div>
+ <span>Český Start Yerevan</span>
+ </a>
+ <nav class="nav-links">
+ <a href="#universities">Համալսարաններ</a>
+ <a href="#benefits">Ինչու Չեխիա</a>
+ <a href="#program">Ծրագիր</a>
+ <a href="#team">Դասախոսներ</a>
+ <a href="#calculator">Հաշվիչ</a>
+ <a href="#booking">Գրանցվել</a>
+ </nav>
+ <div class="lang-switcher" role="group" aria-label="Լեզվի ընտրություն">
+ <button class="lang-btn" data-lang="ru" onclick="location.href='index.html'" title="Русский">RU</button>
+ <button class="lang-btn" data-lang="en" onclick="location.href='english.html'" title="English">EN</button>
+ <button class="lang-btn active" data-lang="hy" onclick="location.href='armenian.html'" title="Հայերեն">HY</button>
+ </div>
+ </div>
+</header>
+
+<section class="hero">
+ <div class="hero-slideshow" aria-hidden="true">
+ <img src="CZ11 (1).jpg" alt="Պրահայի Հին քաղաքի հրապարակը Սուրբ Ծննդյան ժամանակ">
+ <img src="CZ12 (1).jpg" alt="Պրահայի Հին քաղաքի հրապարակը ձմռանը, Սուրբ Ծննդյան ժամանակ">
+ <img src="CZ13 (1).jpg" alt="Պրահայի Օրլոյ (միջնադարյան աստղագիտական ժամացույց)">
+ </div>
+
+ <div class="hero-veil"></div>
+
+ <div class="container hero-grid">
+ <div class="reveal active">
+ <div class="eyebrow">Երևան և օնլայն · դպրոցականներ, ուսանողներ, մեծահասակներ</div>
+ <h1><span class="text-red">Չեխերեն լեզու</span><span class="hero-title-sub">Ճիշտ ուղի դեպի կրթություն Չեխիայում և աշխատանք ԵՄ-ում</span></h1>
+
+ <p class="hero-sub">Համակարգված պատրաստություն դպրոցականների, ուսանողների և մեծահասակների համար՝ սկզբնական մակարդակից մինչև ընտրած ուսումնական ծրագրի կամ մասնագիտական նպատակի համար անհրաժեշտ լեզուն։ Դասեր Երևանում և օնլայն։</p>
+ <div class="hero-cta-group">
+ <a href="#booking" class="btn btn-primary">Գրանցվել փորձնական դասի</a>
+ <a href="#program" class="btn btn-secondary">Տեսնել ծրագիրը</a>
+ </div>
+ <div class="hero-stats">
+ <div class="stat-item">
+ <strong>Ձևաչափեր</strong>
+ <span>Անհատական; խմբային; օնլայն</span>
+ </div>
+ <div class="stat-item">
+ <strong>A1 → B2</strong>
+ <span>Եվրոպական համակարգում ընդունված մակարդակների դասական կառուցվածք</span>
+ </div>
+ <div class="stat-item">
+ <strong>Դասախոս</strong>
+ <span>Ալեքսանդր Շեմետև, տնտեսագիտության գիտությունների դոկտոր (Պրահայի համալսարան)։ Բազմամյա համալսարանական փորձ, 12 գրքի և բազմաթիվ գիտական հոդվածների հեղինակ</span>
+ </div>
+ </div>
+ </div>
+
+ <div class="hero-card reveal active">
+ <div class="hero-card-badge">Չեխիայի համալսարաններ</div>
+ <h3 class="hero-card-title"><span class="text-red">Ուսում չեխերենով Չեխիայի պետական համալսարաններում՝ առանց ուսման վճարի</span></h3>
+ <p class="hero-card-desc">Պայմանները կախված են ծրագրից և ուսանողի կարգավիճակից։ Պետական համալսարանների օրինակներ՝</p>
+ <ul class="uni-list">
+ <li>
+ <div class="check-icon">✓</div>
+ <div>
+ <strong><a href="https://cuni.cz" target="_blank" rel="noopener noreferrer" class="uni-link">Կառլոսի համալսարան (Univerzita Karlova, Պրահա)</a></strong>
+ <small>Հիմնադրված է 1348 թ. Բժշկություն; Իրավունք; IT; Հումանիտար գիտություններ</small>
+ </div>
+ </li>
+ <li>
+ <div class="check-icon">✓</div>
+ <div>
+ <strong><a href="https://vse.cz" target="_blank" rel="noopener noreferrer" class="uni-link">Պրահայի տնտեսագիտական համալսարան (VŠE, Պրահա)</a></strong>
+ <small>Հիմնադրված է 1953 թ. Ֆինանսներ; Բիզնես; Միջազգային առևտուր; Տվյալների անալիտիկա</small>
+ </div>
+ </li>
+ <li>
+ <div class="check-icon">✓</div>
+ <div>
+ <strong><a href="https://cvut.cz" target="_blank" rel="noopener noreferrer" class="uni-link">Չեխական տեխնիկական համալսարան (ČVUT, Պրահա)</a></strong>
+ <small>Եվրոպայի ամենահին տեխնիկական բուհերից մեկը։ Ճարտարապետություն; Ինժեներիա; Ռոբոտատեխնիկա; IT</small>
+ </div>
+ </li>
+ <li>
+ <div class="check-icon">✓</div>
+ <div>
+ <strong><a href="https://ujep.cz" target="_blank" rel="noopener noreferrer" class="uni-link">Յան Եվանգելիստա Պուրկինեի համալսարան (UJEP, Ուստի նադ Լաբեմ)</a></strong>
+ <small>Ժամանակակից համալսարանական քաղաք Ուստի նադ Լաբեմում։ Տնտեսագիտություն; Դիզայն; Մեքենաշինություն; Առողջապահություն</small>
+ </div>
+ </li>
+ <li>
+ <div class="check-icon">✓</div>
+ <div>
+ <strong>Եւս 22 պետական համալսարան ամբողջ Չեխիայում</strong>
+ <small>Ամբողջական ցանկը կայքերի հղումներով՝ ստորև՝ «Չեխիայի համալսարաններ» բաժնում</small>
+ </div>
+ </li>
+ </ul>
+ </div>
+ </div>
+</section>
+
+<section id="universities">
+ <div class="container">
+ <div class="section-header reveal">
+ <h2>Չեխիայի համալսարաններ. ուսում չեխերենով</h2>
+ <p>Պետական համալսարաններում չեխերենով ուսումը ծրագրի պայմաններով անվճար է։ Սեղմեք համալսարանի վրա՝ նրա պաշտոնական կայք անցնելու համար։</p>
+ </div>
+
+ <div class="gallery-grid">
+
+ <a href="https://cuni.cz" target="_blank" rel="noopener noreferrer" class="uni-card-link">
+ <figure class="gallery-card reveal">
+ <img src="CZ10 (1).jpg" alt="Կառլոսի համալսարան Պրահայում (Կարոլինում)" loading="lazy">
+ <figcaption>
+ <h3>Կառլոսի համալսարան (Univerzita Karlova, Պրահա)</h3>
+ <p>Հիմնադրված է 1348 թ.։ Կենտրոնական Եվրոպայի ամենահին համալսարանը։ Բժշկություն և դեղագործություն; Իրավունք; IT և ֆիզիկամաթեմատիկական գիտություններ; Տնտեսագիտություն; Հոգեբանություն; Հումանիտար գիտություններ։</p>
+ </figcaption>
+ </figure>
+ </a>
+
+ <a href="https://vse.cz" target="_blank" rel="noopener noreferrer" class="uni-card-link">
+ <figure class="gallery-card reveal">
+ <img src="CZ9 (1).webp" alt="Պրահայի տնտեսագիտական համալսարան (VŠE)" loading="lazy">
+ <figcaption>
+ <h3>Պրահայի տնտեսագիտական համալսարան (VŠE, Պրահա)</h3>
+ <p>Հիմնադրված է 1953 թ.։ Ֆինանսներ և հաշվապահություն; Միջազգային առևտուր; Մենեջմենթ; Տնտեսագիտություն և տվյալների անալիտիկա։</p>
+ </figcaption>
+ </figure>
+ </a>
+
+ <a href="https://cvut.cz" target="_blank" rel="noopener noreferrer" class="uni-card-link">
+ <figure class="gallery-card reveal">
+ <img src="CZ8 (1).jpg" alt="ČVUT համալսարանական քաղաքը և Պրահայի ազգային տեխնիկական գրադարանը" loading="lazy">
+ <figcaption>
+ <h3>Չեխական տեխնիկական համալսարան (ČVUT, Պրահա)</h3>
+ <p>Հիմնադրված է 1707 թ.։ Եվրոպայի ամենահին տեխնիկական դպրոցներից մեկը։ IT և արհեստական բանականություն; Ճարտարապետություն; Ռոբոտատեխնիկա; Էլեկտրատեխնիկա; Շինարարություն։</p>
+ </figcaption>
+ </figure>
+ </a>
+
+ <a href="https://muni.cz" target="_blank" rel="noopener noreferrer" class="uni-card-link">
+ <figure class="gallery-card reveal">
+ <img src="CZ7 (1).jpg" alt="Մասարիկի համալսարանի համալսարանական քաղաքը Բռնոյում" loading="lazy">
+ <figcaption>
+ <h3>Մասարիկի համալսարան (Masarykova univerzita, Բռնո)</h3>
+ <p>Հիմնադրված է 1919 թ.։ Չեխիայի ամենամեծ բուհերից մեկը, սեփական բևեռային կայանով Անտարկտիդայում։ Բժշկություն; IT; Իրավունք; Տնտեսագիտություն; Կենսատեխնոլոգիաներ; Սոցիալական գիտություններ։</p>
+ </figcaption>
+ </figure>
+ </a>
+
+ <a href="https://ujep.cz" target="_blank" rel="noopener noreferrer" class="uni-card-link">
+ <figure class="gallery-card reveal">
+ <img src="CZ6 (1).jpg" alt="UJEP ժամանակակից համալսարանական քաղաքը Ուստի նադ Լաբեմում" loading="lazy">
+ <figcaption>
+ <h3>Յան Եվանգելիստա Պուրկինեի համալսարան (UJEP, Ուստի նադ Լաբեմ)</h3>
+ <p>Հիմնադրված է 1991 թ.։ Ժամանակակից համալսարանական քաղաք Ուստի նադ Լաբեմում՝ Պրահայից մոտ մեկ ժամ հեռավորության վրա։ Տնտեսագիտություն և մենեջմենթ; Դիզայն; Մեքենաշինություն; Առողջապահություն; Էկոլոգիա; Մանկավարժություն։</p>
+ </figcaption>
+ </figure>
+ </a>
+
+ <a href="https://jcu.cz" target="_blank" rel="noopener noreferrer" class="uni-card-link">
+ <figure class="gallery-card reveal">
+ <img src="CZ5 (1).jpg" alt="Հարավչեխական համալսարանը Չեսկե Բուդեյովիցեում" loading="lazy">
+ <figcaption>
+ <h3>Հարավչեխական համալսարան (Jihočeská univerzita, Չեսկե Բուդեյովիցե)</h3>
+ <p>Հիմնադրված է 1991 թ.։ Կենսաբանության և էկոլոգիայի ուժեղ կենտրոն։ Տնտեսագիտություն և զբոսաշրջություն; Բժշկություն; Գյուղատնտեսություն; Մանկավարժություն։</p>
+ </figcaption>
+ </figure>
+ </a>
+
+ <a href="https://upol.cz" target="_blank" rel="noopener noreferrer" class="uni-card-link">
+ <figure class="gallery-card reveal">
+ <img src="CZ4 (1).jpg" alt="Պալացկիի համալսարանի ռեկտորատը Օլոմուցում" loading="lazy">
+ <figcaption>
+ <h3>Պալացկիի համալսարան (Univerzita Palackého, Օլոմուց)</h3>
+ <p>Հիմնադրված է 1573 թ.։ Չեխիայի ամենահին համալսարաններից մեկը, հայտնի բժշկությամբ և ստոմատոլոգիայով։ Իրավունք; Բնական գիտություններ; Ֆիլոլոգիա; Մանկավարժություն։</p>
+ </figcaption>
+ </figure>
+ </a>
+
+ <a href="https://osu.eu" target="_blank" rel="noopener noreferrer" class="uni-card-link">
+ <figure class="gallery-card reveal">
+ <img src="CZ3 (1).jpg" alt="Օստրավայի համալսարան" loading="lazy">
+ <figcaption>
+ <h3>Օստրավայի համալսարան (Ostravská univerzita, Օստրավա)</h3>
+ <p>Հիմնադրված է 1991 թ.։ Բժշկություն; IT; Տնտեսագիտություն; Մանկավարժություն; Կերպարվեստ; Երաժշտություն; Հումանիտար գիտություններ։</p>
+ </figcaption>
+ </figure>
+ </a>
+
+ <a href="https://vut.cz" target="_blank" rel="noopener noreferrer" class="uni-card-link">
+ <figure class="gallery-card reveal">
+ <img src="CZ2 (1).webp" alt="Բռնոյի տեխնիկական համալսարան (VUT)" loading="lazy">
+ <figcaption>
+ <h3>Բռնոյի տեխնիկական համալսարան (VUT v Brně)</h3>
+ <p>Հիմնադրված է 1899 թ.։ Չեխիայի ամենամեծ տեխնիկական համալսարաններից մեկը։ IT և կիբերանվտանգություն; Մեքենաշինություն; Էլեկտրատեխնիկա; Ճարտարապետություն; Քիմիա; Բիզնես։</p>
+ </figcaption>
+ </figure>
+ </a>
+
+ <a href="https://zcu.cz" target="_blank" rel="noopener noreferrer" class="uni-card-link">
+ <figure class="gallery-card reveal">
+ <img src="CZ1 (1).webp" alt="Արևմտաչեխական համալսարան Պլզենում" loading="lazy">
+ <figcaption>
+ <h3>Արևմտաչեխական համալսարան (ZČU, Պլզեն)</h3>
+ <p>Հիմնադրված է 1991 թ.։ Ռոբոտատեխնիկա; Մեքենաշինություն; Էլեկտրատեխնիկա; Իրավունք; Տնտեսագիտություն; Առողջապահություն; Դիզայն։ Գտնվում է Պլզենում։</p>
+ </figcaption>
+ </figure>
+ </a>
+
+ </div>
+
+ <div class="reveal other-unis">
+ <h3>✓ Չեխիայի այլ պետական համալսարաններ (ընդամենը 26 պետական բուհ)</h3>
+ <ul style="list-style: none; padding-left: 0; margin: 14px 0 0 0; display: flex; flex-direction: column; gap: 10px;">
+ <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Քիմիական տեխնոլոգիաների համալսարան</strong> (<a href="https://www.vscht.cz" target="_blank" rel="noopener noreferrer" class="uni-link">VŠCHT, Պրահա</a>) — Քիմիա և սննդի տեխնոլոգիաներ;</li>
+ <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Չեխական գյուղատնտեսական համալսարան</strong> (<a href="https://www.czu.cz" target="_blank" rel="noopener noreferrer" class="uni-link">ČZU, Պրահա</a>) — Ագրոնոմիա, Էկոլոգիա, Տնտեսագիտություն;</li>
+ <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Մենդելի համալսարան</strong> (<a href="https://mendelu.cz" target="_blank" rel="noopener noreferrer" class="uni-link">MENDELU, Բռնո</a>) — Ագրոնոմիա, Անտառային տնտեսություն, Տնտեսագիտություն;</li>
+ <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Օստրավայի տեխնիկական համալսարան (VSB)</strong> (<a href="https://www.vsb.cz/cs/" target="_blank" rel="noopener noreferrer" class="uni-link">VŠB-TUO, Օստրավա</a>) — IT, Էներգետիկա, Մեքենաշինություն, Տնտեսագիտություն;</li>
+ <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Տոմաշ Բատայի համալսարան</strong> (<a href="https://utb.cz" target="_blank" rel="noopener noreferrer" class="uni-link">UTB, Զլին</a>) — Դիզայն և մուլտիմեդիա, Տնտեսագիտություն, Պոլիմերներ և տեխնոլոգիաներ;</li>
+ <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Պարդուբիցեի համալսարան</strong> (<a href="https://upce.cz" target="_blank" rel="noopener noreferrer" class="uni-link">UPCE, Պարդուբիցե</a>) — Քիմիա, Տրանսպորտ և լոգիստիկա, Տնտեսագիտություն, Առողջապահություն;</li>
+ <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Լիբերեցի տեխնիկական համալսարան</strong> (<a href="https://tul.cz" target="_blank" rel="noopener noreferrer" class="uni-link">TUL, Լիբերեց</a>) — Նանոտեխնոլոգիաներ, Տեքստիլ ինժեներիա, Ճարտարապետություն, Մեխատրոնիկա;</li>
+ <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Հրադեց Կրալովեի համալսարան</strong> (<a href="https://uhk.cz" target="_blank" rel="noopener noreferrer" class="uni-link">UHK, Հրադեց Կրալովե</a>) — Ինֆորմատիկա և մենեջմենթ, Մանկավարժություն, Փիլիսոփայություն;</li>
+ <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Սիլեզիական համալսարան</strong> (<a href="https://slu.cz" target="_blank" rel="noopener noreferrer" class="uni-link">SU, Օպավա / Կարվինա</a>) — Բիզնես և ձեռնարկատիրություն, Մաթեմատիկա, Փիլիսոփայություն;</li>
+ <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Անասնաբուժական համալսարան</strong> (<a href="https://vetuni.cz" target="_blank" rel="noopener noreferrer" class="uni-link">VETUNI, Բռնո</a>) — Անասնաբուժական բժշկություն և հիգիենա;</li>
+ <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Կատարողական արվեստների ակադեմիա</strong> (<a href="https://amu.cz" target="_blank" rel="noopener noreferrer" class="uni-link">AMU, Պրահա</a>) — Կինո (FAMU), թատրոն (DAMU), երաժշտություն և պար (HAMU);</li>
+ <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Կերպարվեստի ակադեմիա</strong> (<a href="https://avu.cz" target="_blank" rel="noopener noreferrer" class="uni-link">AVU, Պրահա</a>) — Նկարչություն, քանդակագործություն, գրաֆիկա, ճարտարապետություն;</li>
+ <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Կիրառական արվեստի բարձրագույն դպրոց</strong> (<a href="https://umprum.cz" target="_blank" rel="noopener noreferrer" class="uni-link">UMPRUM, Պրահա</a>) — Արդյունաբերական և գրաֆիկական դիզայն, նորաձևություն;</li>
+ <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Յանաչեկի կատարողական արվեստների ակադեմիա</strong> (<a href="https://jamu.cz" target="_blank" rel="noopener noreferrer" class="uni-link">JAMU, Բռնո</a>) — Երաժշտական և թատերական արվեստ;</li>
+ <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Յիհլավայի պոլիտեխնիկական ինստիտուտ</strong> (<a href="https://vspj.cz" target="_blank" rel="noopener noreferrer" class="uni-link">VŠPJ, Յիհլավա</a>) — Կիրառական ինֆորմատիկա, զբոսաշրջություն, ֆինանսներ;</li>
+ <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Տեխնոլոգիական և տնտեսական ինստիտուտ</strong> (<a href="https://vstecb.cz" target="_blank" rel="noopener noreferrer" class="uni-link">VŠTE, Չեսկե Բուդեյովիցե</a>) — Շինարարություն, լոգիստիկա, բիզնես-տնտեսագիտություն։</li>
+ </ul>
+ </div>
+ </div>
+</section>
+
+<section id="benefits" class="section-alt">
+ <div class="container">
+ <div class="section-header reveal">
+ <div class="ben-kicker">Ուսումը Չեխիայում՝ հնարավորություն, որ բացում է Եվրոպայի դռները</div>
+ <h2>Ինչո՞ւ սկսել չեխերեն սովորել Երևանում</h2>
+ <p>Չեխիայի համալսարաններում լեզվական դասընթացները արժեն մի քանի հազար եվրո ուսումնական տարում՝ չհաշված Պրահայում բնակարանը։ Երևանում տանը պատրաստվելը զգալիորեն ավելի էժան է։ Հաշվարկը տես ստորև՝ հաշվիչում։</p>
+ </div>
+ <div class="grid-3">
+ <div class="card reveal">
+ <div class="card-icon">🏛️</div>
+ <h3>Եվրոպական որակ և առաջատար պրոֆեսորներ</h3>
+ <p>Չեխիայի համալսարաններում դասավանդում են ԵՄ-ի և աշխարհի առաջատար գիտնականներ և մասնագետներ։ Հիմնարար գիտելիքները և աշխարհում ամենուր ճանաչվող չեխական դիպլոմը կյանքի վստահելի հենարան կդառնան։</p>
+ </div>
+ <div class="card reveal">
+ <div class="card-icon">🇨🇿</div>
+ <h3>Անվճար ուսում և ազատություն Եվրոպայի սրտում</h3>
+ <p>0 € ուսման վճար պետական համալսարաններում, կրթաթոշակներ, սահմաններ չունեցող ճանապարհորդություններ և ազատություն ընտրելու երկիրը՝ ապրելու և կարիերա կառուցելու համար ամբողջ աշխարհում։</p>
+ </div>
+ <div class="card reveal">
+ <div class="card-icon">✨</div>
+ <h3>Աշխույժ երիտասարդություն և երազանքների միջավայր</h3>
+ <p>Անմոռանալի ուսանողական տարիներ հին Եվրոպայի մթնոլորտում, նոր ծանոթություններ ամբողջ աշխարհից և ապագա մասնագետների մեջ՝ ցմահ ընկերներ։</p>
+ </div>
+ </div>
+ </div>
+</section>
+
+<section id="program" class="section-alt">
+ <div class="container">
+ <div class="section-header reveal">
+ <h2>Ծրագիր՝ A0-ից մինչև B2</h2>
+ <p>Դասերը անցկացվում են շաբաթական 2 անգամ, յուրաքանչյուրը 80 րոպե, Երևանի հարմար թաղամասերում (Կենտրոն, Նոր Նորք, Արաբկիր, Շենգավիթ) կամ օնլայն։</p>
+ </div>
+ <div class="timeline">
+ <div class="step-card reveal">
+ <span class="step-num">Մոդուլ 1 · A1 մակարդակ</span>
+ <h3>Կենդանի խոսք և մաքուր արտասանություն առաջին դասերից</h3>
+ <p>Չեխերենի ճիշտ հնչյունաբանություն՝ առանց օտար շեշտի, լեզվական արգելքի հաղթահարում և վստահ շփում տրանսպորտում, սրճարանում, բանկում և ուսանողական համալսարանում։</p>
+ </div>
+ <div class="step-card reveal">
+ <span class="step-num">Մոդուլ 2 · A2 մակարդակ</span>
+ <h3>Ազատ քերականություն՝ առանց անգիրացման</h3>
+ <p>Չեխերենի հոլովների և բայերի տրամաբանությունը՝ հիմնված ընդհանուր սլավոնական արմատների վրա, իրական հոդվածների ընթերցում և բնիկ խոսողների արագ խոսքի վստահ ընկալում ականջով։</p>
+ </div>
+ <div class="step-card reveal">
+ <span class="step-num">Մոդուլ 3 · B1 մակարդակ</span>
+ <h3>Ազատ տիրապետում և կյանք չեխական միջավայրում</h3>
+ <p>Ինքնաբուխ խոսք, քննարկումներին մասնակցություն և սեփական տեսակետի հիմնավորում։ Չեխական մեդիայի դիտում, մամուլի ընթերցում և ցանկացած առօրյա ու ուսանողական խնդրի լուծում Պրահայում։</p>
+ </div>
+ <div class="step-card reveal">
+ <span class="step-num">Մոդուլ 4 · B2 մակարդակ</span>
+ <h3>Ակադեմիական չեխերեն՝ համալսարան ընդունվելու համար</h3>
+ <p>Մասնագիտական բառապաշար ընտրած ոլորտի համար (տնտեսագիտություն, IT, բժշկություն, ինժեներիա և այլն), դասախոսությունների կոնսպեկտում և շարադրությունների գրում։</p>
+ </div>
+ </div>
+ </div>
+</section>
+
+<section id="team">
+ <div class="container">
+ <div class="section-header reveal">
+ <h2>Ով է վարում դասերը</h2>
+ <p>Դասավանդման փորձ Պրահայի համալսարաններում և ուշադրություն յուրաքանչյուր ուսանողի նկատմամբ։</p>
+ </div>
+ <div class="team-grid">
+ <div class="leader-card reveal">
+ <div class="leader-role">Գլխավոր դասախոս և ծրագրի ղեկավար</div>
+ <h3 class="leader-name">Ալեքսանդր Շեմետև, PhD</h3>
+ <p class="leader-sub">Պրահայի տնտեսագիտական համալսարանի (VŠE, Պրահա) հետազոտող և դասախոս</p>
+ <div class="tag-row">
+ <span class="tag">PhD (Պրահա, ԵՄ)</span>
+ <span class="tag">CERGE-EI մագիստրոս</span>
+ <span class="tag">Դասավանդում է VŠE-ում չեխերենով և անգլերենով</span>
+ <span class="tag">12 գրքի հեղինակ</span>
+ <span class="tag">Johns Hopkins Univ.-ի 4 մասնագիտացում</span>
+ </div>
+ <p style="color: var(--text-dark); font-size: 0.98rem;">Չեխիայում հետազոտող և բարձրագույն դպրոցի դասախոս, ունի համալսարանական դասախոսությունների և սեմինարների անցկացման փորձ չեխերենով և անգլերենով։ Գիտի, թե ինչպես է ընթանում ընդունելությունը Պրահայի համալսարաններ, և օգնում է կազմել հստակ պատրաստման պլան։</p>
+ </div>
+
+ <section id="calculator">
+ <div class="curator-card reveal">
+ <div class="curator-role">Ընդունելության ազնիվ հաշվարկ</div>
+ <h3 class="curator-title">Ուսումը Պրահայում, թե՞ սկիզբը Երևանում</h3>
+
+ <table class="price-compare-table">
+ <thead>
+ <tr>
+ <th class="col-prague">Դասընթացներ Պրահայում (7–9 ամիս)</th>
+ <th class="col-yerevan">Մեզ մոտ՝ Երևանում <span class="yerevan-badge"><strong>Շահավետ</strong></span></th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td class="col-prague">
+ <span class="price-label">Պետական համալսարանների դասընթացներ</span>
+ <span class="price-big-bad">5 000–8 500 € (1 978 000–3 362 600 AMD)</span> ուսումնական տարին՝ 7–9 ամիս (առանց բնակարանի արժեքի)<br>
+ <span style="color: black;">714–1 215 € (282 459–480 654 AMD) ամսական</span>
+ </td>
+ <td class="col-yerevan">
+ <span class="price-label">Ուսման արժեքը</span>
+ <span class="price-big-bad">10 000–15 000 AMD</span> ամսական<br>
+ (ընդամենը 25–38 € ամսական)
+ </td>
+ </tr>
+ <tr>
+ <td class="col-prague">
+ <span class="price-label">Մասնավոր դպրոցներ Պրահայում</span>
+ <span class="price-big-bad">4 000–6 000 € (1 582 400–2 373 600 AMD)</span> ուսումնական տարին՝ 7–9 ամիս (առանց բնակարանի արժեքի)<br>
+ <span style="color: black;">571–857 € (225 888–339 030 AMD) ամսական</span>
+ </td>
+ <td class="col-yerevan">
+ <span class="price-label">Ինտենսիվություն և գրաֆիկ</span>
+ <strong>Շաբաթական 2 անգամ՝ յուրաքանչյուրը 1,5 ժամ</strong><br>
+ (ամսական 12 ակադեմիական ժամ)
+ </td>
+ </tr>
+ <tr>
+ <td class="col-prague">
+ <span class="price-label">Ուսում չեխերենով՝ <strong>ԱՆՎՃԱՐ</strong></span>
+ <br>
+ Ուսում անգլերենով՝ վճարովի
+ </td>
+ <td class="col-yerevan">
+ <span class="price-label">Բնակարան և ժամանակ</span>
+ <strong>0 € լրացուցիչ ծախս</strong>՝ երեխան ապրում է տանը և զուգահեռաբար սովորում դպրոցում
+ </td>
+ </tr>
+ <tr class="price-total-row">
+ <td class="col-prague">
+ <span class="price-label">Տարեկան ընդհանուր</span>
+ 8 500–15 000 € (3 362 600–5 934 000 AMD)<br>
+ <span style="font-weight: 500; font-size: 0.8rem;">+ դպրոցից հետո կորցված մեկ տարի</span>
+ </td>
+ <td class="col-yerevan">
+ <span class="price-big-bad">Ընդհանուր 9 ամսվա համար</span>
+ 90 000–135 000 AMD (227 €–342 €)<br>
+ <span class="price-label"><font color="#FF0000" size="6">Բյուջեի խնայողություն մինչև 95%</font></span>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+
+ <p class="compare-note">
+ ✓ Դասավանդում է բազմամյա համալսարանական փորձ ունեցող դասախոս՝ դուք ստանում եք Չեխիայի ակադեմիական չափանիշը Երևանի տեղական դասընթացների գնով։
+ </p>
+ </div>
+ </section>
+ </div>
+ </div>
+</section>
+
+<section id="booking" class="section-alt">
+ <div class="container">
+ <div class="booking-wrapper reveal">
+ <div>
+ <div class="eyebrow">Խմբերի ձևավորում 2026/2027</div>
+ <h2 class="booking-title">Գրանցվեք փորձնական ծանոթական դասի</h2>
+ <p class="booking-text">Փորձնական հանդիպման ընթացքում կծանոթանանք, կորոշենք ուսանողի մեկնարկային մակարդակը, կքննարկենք նպատակները և կընտրենք հարմար գրաֆիկ՝ Երևանի ձեր թաղամասում կամ օնլայն։</p>
+ <div class="contacts-box">
+ <div class="contacts-title">Կոնտակտներ Երևանում և Պրահայում՝</div>
+ <p>📞 <strong>Հայաստան (WhatsApp / զանգեր):</strong> +374 55 77-57-86</p>
+ <p>📞 <strong>Չեխիա (WhatsApp):</strong> +420 601 004 075</p>
+ <p>✉️ <strong>Էլ. փոստ:</strong> alexandershemetev@gmail.com</p>
+ </div>
+ </div>
+ <form onsubmit="sendToWhatsApp(event)">
+ <div class="form-group">
+ <label for="studentName">Ուսանողի կամ ծնողի անունը *</label>
+ <input type="text" id="studentName" class="form-control" placeholder="Օրինակ՝ Աննա / Արմեն" required>
+ </div>
+ <div class="form-group">
+ <label for="studentGrade">Դասարան կամ ընթացիկ կարգավիճակ *</label>
+ <select id="studentGrade" class="form-control">
+ <option value="8–9-րդ դասարան">8–9-րդ դասարան (վաղ պատրաստություն)</option>
+ <option value="10–11-րդ դասարան">10–11-րդ դասարան (ընդունելությանը պատրաստվել)</option>
+ <option value="Համալսարանի ուսանող">Համալսարանի ուսանող (տեղափոխություն կամ մագիստրատուրա Չեխիայում)</option>
+ <option value="Մեծահասակ">Մեծահասակ (աշխատանք կամ տեղափոխություն Չեխիա)</option>
+ </select>
+ </div>
+ <div class="form-group">
+ <label for="district">Հարմար թաղամաս Երևանում կամ ձևաչափ</label>
+ <select id="district" class="form-control">
+ <option value="Կենտրոն">Կենտրոն</option>
+ <option value="Նոր Նորք">Նոր Նորք</option>
+ <option value="Արաբկիր">Արաբկիր</option>
+ <option value="Շենգավիթ / Էրեբունի">Շենգավիթ / Էրեբունի (մետրոյի մոտ)</option>
+ <option value="Օնլայն">Օնլայն խումբ</option>
+ </select>
+ </div>
+ <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 8px;">Ուղարկել հայտը WhatsApp-ով →</button>
+ <p class="form-note">Կոճակը սեղմելուց կբացվի WhatsApp՝ արդեն գրված հայտով</p>
+ </form>
+ </div>
+ </div>
+</section>
+
+<footer>
+ <div class="container">
+ <div class="footer-grid">
+ <div>
+ <div class="footer-brand">Český Start Yerevan</div>
+ <p style="max-width: 380px; font-size: 0.9rem;">Չեխերենի պատրաստություն Երևանում և օնլայն՝ Չեխիայում և ԵՄ այլ երկրներում սովորելու և աշխատելու համար։</p>
+ </div>
+ <div class="footer-links">
+ <div class="footer-links-title">Կապ մեզ հետ</div>
+ <a href="https://wa.me/37455775786" target="_blank" rel="noopener">WhatsApp: +374 55 77-57-86</a>
+ <a href="mailto:alexandershemetev@gmail.com">alexandershemetev@gmail.com</a>
+ <a href="https://www.linkedin.com/in/alexshemetev" target="_blank" rel="noopener">Դասախոսի պրոֆիլ LinkedIn-ում</a>
+ </div>
+ </div>
+ <div class="footer-bottom">
+ <span>© 2026 Ալեքսանդր Շեմետև (PhD, VŠE Պրահա)։ Երևան – Պրահա։</span>
+ <span><a href="index.html" style="color:inherit">RU</a> · <a href="english.html" style="color:inherit">EN</a> · <a href="armenian.html" style="color:inherit">HY</a></span>
+ </div>
+ </div>
+</footer>
+
+<script>
+ /* ----- Սկրոլի ժամանակ բլոկների հայտնվելու անիմացիա ----- */
+ const observer = new IntersectionObserver((entries) => {
+ entries.forEach(entry => {
+ if (entry.isIntersecting) entry.target.classList.add('active');
+ });
+ }, { threshold: 0.12 });
+ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+ /* ----- Փորձնական դասի հայտը WhatsApp-ով (սերվեր պետք չէ) ----- */
+ function sendToWhatsApp(e) {
+ e.preventDefault();
+ const name = document.getElementById('studentName').value.trim();
+ const grade = document.getElementById('studentGrade').value;
+ const district = document.getElementById('district').value;
+ const text =
+ `Բարև Ձեզ, Ալեքսանդր։ Ցանկանում եմ գրանցվել չեխերենի փորձնական դասի Երևանում։\n` +
+ `• Անուն՝ ${name}\n` +
+ `• Կարգավիճակ կամ դասարան՝ ${grade}\n` +
+ `• Հարմար թաղամաս կամ ձևաչափ՝ ${district}`;
+ window.open(`https://wa.me/37455775786?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+ }
+</script>
+</body>
+</html>

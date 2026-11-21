@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="theme-color" content="#ffffff">
+ <title>Чешский язык: верный путь к образованию в Чехии и работе в ЕС</title>
+  
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+ <meta name="description" content="Системная подготовка по чешскому языку для школьников, студентов и взрослых в Ереване и онлайн. Занятия ведёт преподаватель Пражского экономического университета (VŠE, PhD).">
+ <meta name="keywords" content="чешский язык Ереван, курсы чешского, обучение в Чехии, VŠE Прага, Карлов университет, подготовка к поступлению Чехия">
+
+ <meta property="og:title" content="Чешский язык: верный путь к образованию в Чехии и работе в ЕС">
+ <meta property="og:description" content="Системная подготовка от начального уровня до языка выбранной программы. Занятия в Ереване и онлайн.">
+ <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+
+ <style>
+ 
+ :root {
+ --bg-page: #ffffff; /* ФОН САЙТА */
+ --bg-alt: #f5f7fb; /* фон секций через одну и подвала */
+ --card-bg: #ffffff; /* фон карточек */
+ --calc-bg: #eef3fa; /* фон калькулятора */
+ --note-bg: #eff6ff; /* фон блока «Важно знать» */
+ --caption-bg: #ffffff; /* фон подписи в галерее */
+ --veil-strong: 0.94; /* белая завеса слева (0–1) */
+ --veil-weak: 0.45; /* белая завеса справа (0–1) */
+
+ --primary: #0f2c59; /* основной тёмно-синий */
+ --primary-light: #1d4ed8; /* синий */
+ --accent: #d90429; /* красный акцент */
+ --accent-hover: #b90322; /* красный при наведении */
+ --highlight: #b45309; /* золото-коричневый */
+ --title-red: #d7141a; /* красный заголовков */
+ --module-1: #0f2c59; /* полоска сверху модуля 01 */
+ --module-2: #1d4ed8; /* полоска сверху модуля 02 */
+ --module-3: #b45309; /* полоска сверху модуля 03 */
+
+ --text-dark: #0f172a; /* основной текст */
+ --text-muted: #334155; /* вторичный текст */
+ --border: #dde3ee; /* линии и рамки */
+
+ --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif; /* заголовки */
+ --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; /* основной текст */
+
+ --shadow: 0 10px 30px -8px rgba(15, 44, 89, 0.12);
+ --shadow-hover: 0 20px 40px -10px rgba(15, 44, 89, 0.20);
+ --radius: 16px;
+ }
+
+ 
+ * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+ body {
+ font-family: var(--font-body);
+ color: var(--text-dark); /* основной текст */
+ background-color: var(--bg-page); /* ФОН САЙТА */
+ line-height: 1.6;
+ overflow-x: hidden;
+ }
+ @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+ @keyframes pulseGlow {
+ 0%, 100% { box-shadow: 0 0 0 0 rgba(217, 4, 41, 0.35); }
+ 50% { box-shadow: 0 0 0 12px rgba(217, 4, 41, 0); }
+ }
+ .reveal { opacity: 0; transform: translateY(28px); transition: all 0.7s cubic-bezier(0.22, 1, 0.36, 1); }
+ .reveal.active { opacity: 1; transform: translateY(0); }
+ .container { max-width: 1180px; margin: 0 auto; padding: 0 20px; }
+ section { padding: 80px 0; }
+ .section-alt { background-color: var(--bg-alt); } /* фон секции через одну */
+ .section-header { text-align: center; max-width: 720px; margin: 0 auto 54px; }
+ .section-header h2 {
+ font-family: var(--font-display); /* шрифт заголовков секций */
+ font-size: 2.4rem; color: var(--primary); /* цвет заголовков секций */
+ font-weight: 700; margin-bottom: 14px; line-height: 1.15;
+ }
+ .section-header p { color: var(--text-muted); font-size: 1.05rem; } /* подзаголовки секций */
+
+ 
+ header {
+ position: sticky; top: 0; z-index: 1000;
+ background: rgba(255, 255, 255, 0.94); /* фон шапки */
+ backdrop-filter: blur(12px);
+ border-bottom: 1px solid var(--border); /* линия под шапкой */
+ }
+ .nav-inner { display: flex; justify-content: space-between; align-items: center; height: 76px; }
+ .logo {
+ display: flex; align-items: center; gap: 10px; text-decoration: none;
+ color: var(--primary); /* название в шапке */
+ font-family: var(--font-display); font-weight: 700; font-size: 1.4rem;
+ }
+ .logo-badge { /* квадратик CZ: половина синяя, половина красная */
+ background: linear-gradient(135deg, var(--primary) 50%, var(--accent) 50%);
+ color: #ffffff; width: 36px; height: 36px; border-radius: 10px;
+ display: flex; align-items: center; justify-content: center;
+ font-family: var(--font-body); font-size: 0.9rem; font-weight: 900;
+ }
+ .nav-links { display: flex; gap: 26px; align-items: center; }
+ .nav-links a { text-decoration: none; color: var(--text-dark); font-weight: 500; font-size: 0.95rem; transition: color 0.2s; }
+ .nav-links a:hover { color: var(--accent); } /* ссылки меню при наведении */
+ .lang-switcher {
+ display: flex; align-items: center; gap: 2px; padding: 3px;
+ background: var(--bg-alt); border: 1px solid var(--border); border-radius: 99px;
+ }
+ .lang-btn {
+ border: none; background: transparent; padding: 5px 11px; border-radius: 99px;
+ font-size: 0.8rem; font-weight: 700; cursor: pointer;
+ color: var(--text-muted); transition: all 0.25s ease;
+ }
+ .lang-btn.active { background: var(--primary); color: #ffffff; } /* активный язык */
+ .lang-btn:hover:not(.active) { color: var(--primary); }
+ 
+
+
+ .hero {
+ position: relative; padding: 90px 0 100px;
+ overflow: hidden;
+ background-color: var(--bg-alt); /* запасной фон, если фото не загрузилось */
+ }
+ .text-red { color: var(--title-red); } /* красный текст: «Чешский язык» и красные заголовки */
+ .hero-bg { /* ФОТО 1: фото Праги на фоне первого экрана */
+ position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+ object-fit: cover; object-position: center 40%;
+ z-index: 0;
+ }
+ .hero-veil { /* белая завеса поверх фото: делает текст читаемым */
+ position: absolute; inset: 0; z-index: 1;
+ background: linear-gradient(90deg,
+ rgba(255, 255, 255, var(--veil-strong)) 0%,
+ rgba(255, 255, 255, 0.75) 50%,
+ rgba(255, 255, 255, var(--veil-weak)) 100%);
+ }
+ .hero-grid { position: relative; z-index: 2; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 48px; align-items: center; }
+ .eyebrow { /* маленькая плашка над заголовком */
+ display: inline-flex; align-items: center; gap: 8px;
+ background: #ffffff; color: var(--primary-light); /* фон и текст плашки */
+ border: 1px solid #bfdbfe; /* рамка плашки */
+ padding: 6px 14px; border-radius: 99px; font-size: 0.85rem; font-weight: 700; margin-bottom: 20px;
+ }
+ .hero h1 {
+ font-family: var(--font-display); /* шрифт заголовка */
+ font-size: 3.6rem; line-height: 1.05; font-weight: 700;
+ color: var(--primary); /* цвет «Чешский язык» */
+ margin-bottom: 22px; letter-spacing: -0.01em;
+ }
+ .hero-title-sub { /* «Верный путь к образованию в Чехии и работе в ЕС» */
+ display: block; font-size: 1.9rem; font-weight: 600;
+ color: var(--accent); /* цвет второй строки заголовка: красный */
+ margin-top: 10px; line-height: 1.25;
+ }
+ .hero-sub { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 32px; max-width: 600px; } /* описание под заголовком */
+ .hero-cta-group { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 36px; }
+ .btn {
+ display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+ padding: 15px 28px; border-radius: 12px; font-weight: 700; font-size: 1rem;
+ text-decoration: none; cursor: pointer; border: none; transition: all 0.25s ease;
+ }
+ .btn-primary { background: var(--accent); color: #ffffff; animation: pulseGlow 2.8s infinite; } /* главная кнопка: фон и текст */
+ .btn-primary:hover { background: var(--accent-hover); transform: translateY(-2px); }
+ .btn-secondary { background: #ffffff; color: var(--primary); border: 2px solid var(--primary); } /* вторичная кнопка */
+ .btn-secondary:hover { background: var(--primary); color: #ffffff; }
+ .hero-stats {
+ display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+ padding-top: 24px; border-top: 1px solid var(--border); /* линия над цифрами */
+ }
+ .stat-item strong { display: block; font-size: 1.4rem; color: var(--primary); font-weight: 800; } /* цифры статистики */
+ .stat-item span { font-size: 0.85rem; color: var(--text-muted); } /* подписи к цифрам */
+
+ /* Белая карточка справа на первом экране */
+ .hero-card {
+ background: var(--card-bg); color: var(--text-dark); /* фон и текст карточки */
+ border-radius: 24px; padding: 32px;
+ box-shadow: var(--shadow-hover); border: 1px solid var(--border);
+ position: relative; animation: float 6s ease-in-out infinite;
+ }
+ .hero-card-badge { /* ярлык сверху карточки */
+ position: absolute; top: -14px; right: 24px;
+ background: var(--primary); color: #ffffff; /* фон и текст ярлыка */
+ padding: 6px 14px; border-radius: 99px; font-size: 0.8rem; font-weight: 700;
+ }
+ .hero-card-title { font-family: var(--font-display); color: var(--primary); font-size: 1.6rem; margin-bottom: 6px; font-weight: 700; text-align: center;} /* заголовок карточки */
+ .hero-card-desc { color: var(--text-muted); font-size: 0.92rem; text-align: center; } /* описание карточки */
+ .uni-list { list-style: none; margin: 18px 0 0; }
+ .uni-list li {
+ display: flex; align-items: flex-start; gap: 12px; padding: 12px 0;
+ border-bottom: 1px dashed var(--border); color: var(--text-dark);
+ }
+ .uni-list li:last-child { border-bottom: none; }
+ .uni-list strong { color: var(--text-dark); } /* названия вузов */
+ .uni-list small { display: block; font-size: 0.85rem; color: var(--text-muted); } /* описания вузов */
+ .check-icon {
+ width: 24px; height: 24px; border-radius: 50%;
+ background: #dcfce7; color: #15803d; /* фон кружка и цвет галочки */
+ display: flex; align-items: center; justify-content: center;
+ font-weight: 900; font-size: 0.85rem; flex-shrink: 0; margin-top: 2px;
+ }
+
+ 
+ .hero-slideshow {
+ position: absolute; inset: 0; z-index: 0;
+ }
+ .hero-slideshow img {
+ position: absolute; inset: 0; width: 100%; height: 100%;
+ object-fit: cover; object-position: center 40%;
+ opacity: 0;
+ animation: slideFade 24s infinite; /* ЦИКЛ: 24 секунды на три кадра */
+ }
+ .hero-slideshow img:nth-child(2) { animation-delay: -8s; } /* второй кадр: сдвиг 8 секунд */
+ .hero-slideshow img:nth-child(3) { animation-delay: -16s; } /* третий кадр: сдвиг 16 секунд */
+ @keyframes slideFade {
+ 0% { opacity: 0; }
+ 4% { opacity: 1; } /* скорость появления: около 1 секунды */
+ 30% { opacity: 1; } /* время, пока кадр полностью виден: около 7 секунд */
+ 34% { opacity: 0; } /* скорость исчезновения: около 1 секунды */
+ 100% { opacity: 0; }
+ }
+ 
+ .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+ .gallery-card {
+ background: var(--card-bg); /* фон карточки галереи */
+ border: 1px solid var(--border); /* рамка карточки галереи */
+ border-radius: var(--radius); overflow: hidden;
+ box-shadow: var(--shadow); transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+ .gallery-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+ .gallery-card img {
+ display: block; width: 100%; height: 230px; object-fit: cover;
+ background: #e2e8f0; /* серый фон, пока фото не вставлено */
+ }
+ .gallery-card figcaption { padding: 18px 20px 20px; background: var(--caption-bg); } /* фон подписи */
+ .gallery-card h3 { font-family: var(--font-display); font-size: 1.4rem; color: var(--primary); margin-bottom: 4px; font-weight: 700; } /* название места */
+ .gallery-card p { font-size: 0.92rem; color: var(--text-muted); } /* описание места */
+
+
+
+ .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+ .card {
+ background: var(--card-bg); border-radius: var(--radius); padding: 30px;
+ border: 1px solid var(--border); box-shadow: var(--shadow);
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+ .card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+ .card-icon {
+ width: 50px; height: 50px; border-radius: 14px;
+ background: #eff6ff; color: var(--primary-light); /* фон и цвет значка */
+ display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 20px;
+ }
+ .card h3 { font-size: 1.2rem; color: var(--primary); margin-bottom: 10px; } /* заголовок карточки */
+ .card p { color: var(--text-muted); font-size: 0.96rem; } /* текст карточки */
+
+ 
+ 
+ .calc-box {
+ background: var(--calc-bg); /* фон блока калькулятора */
+ border: 1px solid var(--border); border-radius: 24px; padding: 44px;
+ display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;
+ box-shadow: var(--shadow);
+ }
+ .calc-controls h2 { font-family: var(--font-display); font-size: 2.2rem; color: var(--primary); margin-bottom: 12px; line-height: 1.15; font-weight: 700; } /* заголовок калькулятора */
+ .calc-controls > p { color: var(--text-muted); margin-bottom: 24px; font-size: 0.95rem; } /* описание */
+ .calc-controls label { display: block; font-weight: 600; margin-bottom: 8px; font-size: 0.95rem; color: var(--text-dark); } /* подписи полей */
+ .calc-select {
+ width: 100%; padding: 14px 16px; border-radius: 12px;
+ border: 1px solid #cbd5e1; /* рамка поля */
+ background: #ffffff; /* фон поля */
+ color: var(--text-dark); /* текст в поле */
+ font-size: 1rem; font-weight: 600; margin-bottom: 20px; outline: none;
+ font-family: var(--font-body);
+ }
+ .calc-select:focus { border-color: var(--primary-light); } /* рамка поля в фокусе */
+ .calc-note { font-size: 0.8rem; color: var(--text-muted); margin-top: 14px; }
+ .calc-result {
+ background: #ffffff; /* фон панели расчёта */
+ border: 1px solid var(--border); border-radius: 18px; padding: 28px;
+ }
+ .calc-result-title { font-weight: 700; color: var(--primary); margin-bottom: 12px; font-size: 1.1rem; } /* заголовок расчёта */
+ /* Строка: название слева (растягивается), сумма справа (фиксированная ширина). Поэтому суммы стоят ровно. */
+ .calc-row {
+ display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center;
+ padding: 12px 0; border-bottom: 1px solid var(--border); /* линия между строками */
+ font-size: 0.95rem; color: var(--text-muted); /* название строки */
+ }
+ .calc-row strong { color: var(--text-dark); text-align: right; white-space: nowrap; } /* сумма в строке */
+ .calc-row-total {
+ border-bottom: none; border-top: 2px solid var(--primary); /* линия над итогом */
+ margin-top: 6px; padding-top: 16px;
+ font-size: 1.1rem; font-weight: 800; color: var(--primary); /* название итога */
+ }
+ .calc-row-total strong { color: var(--highlight); font-size: 1.25rem; } /* сумма итога: золото-коричневый */
+
+ 
+ .timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+ .step-card {
+ background: var(--card-bg); border-radius: 16px; padding: 24px;
+ border: 1px solid var(--border); /* рамка карточки модуля */
+ }
+ .step-card h3 { color: var(--primary); margin-bottom: 8px; font-size: 1.15rem; } /* название модуля */
+ .step-card p { font-size: 0.92rem; color: var(--text-muted); } /* описание модуля */
+ .step-num { /* плашка «Модуль 1 · Уровень A1» */
+ display: inline-block; background: var(--primary); color: #ffffff; /* фон и текст плашки */
+ font-weight: 800; font-size: 0.8rem; padding: 4px 12px; border-radius: 99px; margin-bottom: 12px;
+ }
+
+ 
+ .team-grid { display: grid; grid-template-columns: 1fr; gap: 30px; } /* одна карточка преподавателя на всю ширину */
+ .leader-card {
+ background: var(--card-bg); border-radius: 20px; padding: 36px;
+ border: 1px solid var(--border); box-shadow: var(--shadow);
+ }
+ .leader-role { font-size: 0.85rem; font-weight: 700; color: var(--accent); text-transform: uppercase; } /* роль преподавателя: красный */
+ .leader-name { font-family: var(--font-display); font-size: 2.1rem; color: var(--primary); margin: 6px 0; font-weight: 700; line-height: 1.1; } /* имя преподавателя */
+ .leader-sub { color: var(--text-muted); font-weight: 500; } /* подпись под именем */
+ .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 22px; }
+ .tag {
+ background: #eef3fa; color: var(--primary); /* фон и текст тегов-достижений */
+ padding: 5px 12px; border-radius: 8px; font-size: 0.82rem; font-weight: 700;
+ }
+ 
+ .curator-card {
+  background: linear-gradient(180deg, #ffd500 0%, #ffffff 100%);
+  border-radius: 20px;
+  padding: 32px;
+  border: 1px solid #fde68a;
+  box-shadow: var(--shadow);
+}
+.curator-role {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--highlight);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-align: center; /* выравнивание по центру */
+}
+.curator-title {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  color: var(--primary);
+  margin: 8px 0 18px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center; /* выравнивание по центру */
+}
+.price-compare-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  font-size: 0.9rem;
+}
+.price-compare-table th {
+  padding: 14px 14px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+.price-compare-table th.col-prague {
+  background: #f1f5f9;
+  color: #475569;
+  width: 48%;
+  border-right: 1px solid #e2e8f0;
+}
+.price-compare-table th.col-yerevan {
+  background: #0f294a;
+  color: #ffffff;
+  width: 52%;
+}
+.yerevan-badge {
+  display: inline-block;
+  background: #ffd500;
+  color: #0f294a;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-left: 6px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+.price-compare-table td {
+  padding: 12px 14px;
+  vertical-align: top;
+  border-top: 1px solid #e2e8f0;
+  line-height: 1.38;
+}
+.price-compare-table td.col-prague {
+  background: #f8fafc;
+  color: #64748b;
+  border-right: 1px solid #e2e8f0;
+}
+.price-compare-table td.col-yerevan {
+  background: #ffffff;
+  color: #0f172a;
+  font-weight: 500;
+}
+.price-label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #94a3b8;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+.col-yerevan .price-label {
+  color: #1d4ed8;
+}
+.price-big-bad {
+  font-weight: 700;
+  color: #334155;
+  font-size: 0.96rem;
+}
+.price-big-good {
+  font-weight: 800;
+  color: #0f294a;
+  font-size: 1.05rem;
+}
+.price-total-row td.col-prague {
+  background: #e2e8f0;
+  color: #334155;
+  font-weight: 700;
+}
+.price-total-row td.col-yerevan {
+  background: #fef9c3;
+  color: #0f294a;
+  font-weight: 800;
+}
+.compare-note {
+  margin-top: 14px;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+@media (max-width: 540px) {
+  .curator-card { padding: 20px 16px; }
+  .price-compare-table th, .price-compare-table td { padding: 10px 9px; font-size: 0.82rem; }
+}
+ 
+
+ .modules-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+ .module-card {
+ background: var(--card-bg); /* фон карточки модуля */
+ border: 1px solid var(--border); /* рамка карточки модуля */
+ border-top: 5px solid var(--module-color); /* полоска сверху: цвет задаётся классом module-1/2/3 */
+ border-radius: var(--radius); padding: 30px; box-shadow: var(--shadow);
+ }
+ .module-1 { --module-color: var(--module-1); }
+ .module-2 { --module-color: var(--module-2); }
+ .module-3 { --module-color: var(--module-3); }
+ .module-num { font-size: 0.8rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--module-color); margin-bottom: 10px; } /* «Модуль 01» */
+ .module-title { font-family: var(--font-display); font-size: 1.6rem; line-height: 1.15; color: var(--primary); font-weight: 700; margin-bottom: 10px; } /* название модуля */
+ .module-sub { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 14px; } /* подзаголовок модуля */
+ .module-list { list-style: none; }
+ .module-list li { display: flex; gap: 12px; padding: 12px 0; border-top: 1px dashed var(--border); color: var(--text-dark); font-size: 0.94rem; } /* пункты модуля */
+ .module-list strong { color: var(--primary); } /* выделенные начала пунктов */
+ .module-check { color: var(--module-color); font-weight: 900; flex-shrink: 0; } /* галочка в пункте */
+
+ 
+ .uni-card-link { display: block; text-decoration: none; color: inherit; }
+ .uni-link { color: var(--primary-light); text-decoration: none; border-bottom: 1px dashed currentColor; } /* синие ссылки на сайты вузов */
+ .uni-link:hover { color: var(--accent); }
+ .other-unis {
+ margin-top: 32px; background: var(--card-bg); /* фон блока «Другие вузы» */
+ padding: 24px 28px; border-radius: 18px; box-shadow: var(--shadow);
+ border-left: 5px solid var(--title-red); /* красная полоска слева */
+ }
+ .other-unis h3 { font-size: 1.15rem; color: var(--primary); margin-bottom: 8px; } /* заголовок блока */
+ .other-unis p { color: var(--text-muted); font-size: 0.96rem; line-height: 1.6; } /* текст блока */
+
+ .ben-kicker { color: var(--title-red); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.85rem; margin-bottom: 10px; }
+
+ 
+ .booking-wrapper {
+ background: var(--card-bg); border-radius: 24px; padding: 44px;
+ border: 1px solid var(--border); box-shadow: var(--shadow-hover);
+ display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: center;
+ }
+ .booking-title { font-family: var(--font-display); font-size: 2.4rem; color: var(--primary); margin-bottom: 14px; font-weight: 700; line-height: 1.1; }
+ .booking-text { color: var(--text-muted); margin-bottom: 24px; }
+ .contacts-box { /* блок с контактами */
+ background: var(--bg-alt); /* фон блока контактов */
+ padding: 20px; border-radius: 14px; border: 1px solid var(--border);
+ }
+ .contacts-title { font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+ .contacts-box p { margin-bottom: 6px; color: var(--text-dark); }
+ .form-group { margin-bottom: 16px; }
+ .form-group label { display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 6px; color: var(--text-dark); }
+ .form-control {
+ width: 100%; padding: 13px 16px; border-radius: 10px;
+ border: 1px solid #cbd5e1; /* рамка полей формы */
+ background: #ffffff; color: var(--text-dark); /* фон и текст полей формы */
+ font-size: 1rem; font-family: var(--font-body); transition: border-color 0.2s;
+ }
+ .form-control:focus { outline: none; border-color: var(--primary-light); } /* рамка поля в фокусе */
+ .form-note { font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 10px; }
+
+ .info-note { /* блок «Важно знать» под формой записи */
+ margin-top: 40px; background: var(--note-bg); /* фон блока пояснений */
+ border: 1px solid #bfdbfe; /* рамка блока пояснений */
+ border-radius: 20px; padding: 32px 36px;
+ }
+ .info-note h3 { font-family: var(--font-display); font-size: 1.6rem; color: var(--primary); margin-bottom: 8px; font-weight: 700; } /* заголовки пояснений */
+ .info-note p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 18px; } /* текст пояснений */
+ .info-note p:last-child { margin-bottom: 0; }
+
+ 
+ footer {
+ background: var(--bg-alt); /* фон подвала */
+ border-top: 1px solid var(--border); /* линия над подвалом */
+ color: var(--text-muted); /* текст подвала */
+ padding: 56px 0 32px;
+ }
+ .footer-grid {
+ display: flex; justify-content: space-between; flex-wrap: wrap; gap: 24px;
+ padding-bottom: 28px; border-bottom: 1px solid var(--border);
+ }
+ .footer-brand { font-family: var(--font-display); color: var(--primary); font-weight: 700; font-size: 1.6rem; margin-bottom: 8px; } /* название в подвале */
+ .footer-links a { color: var(--primary); text-decoration: none; display: block; margin-bottom: 8px; font-weight: 500; } /* ссылки в подвале */
+ .footer-links a:hover { color: var(--accent); }
+ .footer-links-title { font-weight: 700; color: var(--text-dark); margin-bottom: 10px; }
+ .footer-bottom { padding-top: 20px; font-size: 0.82rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+
+ 
+ @media (max-width: 920px) {
+ .hero-grid, .calc-box, .team-grid, .booking-wrapper { grid-template-columns: 1fr; }
+ .grid-3, .modules-grid { grid-template-columns: 1fr; }
+ .gallery-grid { grid-template-columns: 1fr 1fr; }
+ .timeline { grid-template-columns: 1fr 1fr; }
+ .nav-links { display: none; }
+ .hero h1 { font-size: 2.8rem; }
+ .hero-title-sub { font-size: 1.5rem; }
+ .hero-veil { background: rgba(255, 255, 255, 0.86); } /* на телефоне фото чуть приглушено сильнее */
+ }
+ @media (max-width: 540px) {
+ .timeline, .gallery-grid { grid-template-columns: 1fr; }
+ .hero-stats { grid-template-columns: 1fr; }
+ .calc-box, .booking-wrapper { padding: 26px; }
+ .info-note { padding: 24px; }
+ .hero h1 { font-size: 2.3rem; }
+ }
+ @media (prefers-reduced-motion: reduce) {
+ .btn-primary, .hero-card { animation: none; }
+ .reveal { transition: none; opacity: 1; transform: none; }
+ }
+ </style>
+</head>
+<body>
+
+<header>
+ <div class="container nav-inner">
+ <a href="#" class="logo">
+ <div class="logo-badge">CZ</div>
+ <span>Český Start Yerevan</span>
+ </a>
+ <nav class="nav-links">
+ <a href="#universities">Вузы Чехии</a>
+ <a href="#benefits">Почему Чехия</a>
+ <a href="#program">Программа</a>
+ <a href="#team">Преподаватели</a>
+ <a href="#calculator">Калькулятор</a>
+ <a href="#booking">Запись</a>
+ </nav>
+ <div class="lang-switcher" role="group" aria-label="Выбор языка">
+ <button class="lang-btn active" data-lang="ru" onclick="location.href='index.html'" title="Русский">RU</button>
+ <button class="lang-btn" data-lang="en" onclick="location.href='english.html'" title="English">EN</button>
+ <button class="lang-btn" data-lang="hy" onclick="location.href='armenian.html'" title="Հայերեն">HY</button>
+ </div>
+ </div>
+</header>
+
+<section class="hero">
+
+ 
+ <div class="hero-slideshow" aria-hidden="true">
+ <img src="CZ11 (1).jpg" alt="Вид староместской площади в Рождество (Прага)">
+ <img src="CZ12 (1).jpg" alt="Староместская площадь Прага зимой в Рождество">
+ <img src="CZ13 (1).jpg" alt="Пражский Орлой (Средневековые Астрологические Часы)">
+ </div>
+  <!--     -->
+
+ <div class="hero-veil"></div>
+
+ <div class="container hero-grid">
+ <div class="reveal active">
+ <div class="eyebrow">Чешский язык · школьники, студенты, взрослые</div>
+ <!--<h1>Чешский язык<span>Верный путь к образованию в Чехии и работе в ЕС</span></h1>-->
+ <h1><span class="text-red">Чешский язык</span><span class="hero-title-sub">Верный путь к образованию в Чехии и работе в ЕС</span></h1>
+
+ <p class="hero-sub">Системная подготовка для школьников, студентов и взрослых: от начального уровня до языка, необходимого для выбранной учебной программы или профессиональной цели. Занятия в Ереване и онлайн.</p>
+ <div class="hero-cta-group">
+ <a href="#booking" class="btn btn-primary">Записаться на пробный урок</a>
+ <a href="#program" class="btn btn-secondary">Смотреть программу</a>
+ </div>
+ <div class="hero-stats">
+
+ <div class="stat-item">
+ <strong>Занятия</strong>
+ <span>Индивидуальные; Групповые; Онлайн</span>
+ </div>
+ <div class="stat-item">
+ <strong>A1 → B2</strong>
+ <span>Обучение по классической структуре уровней, принятой в европейской системе</span>
+ </div>
+  <div class="stat-item">
+ <strong>Преподаватель</strong>
+ <span>Александр Шеметев, Доктор Экономических Наук (Университет в Праге). Многолетний опыт Преподавания в Университетах, Автор 12 Книг и множества Научных Статей</span>
+ </div>
+ </div>
+ </div>
+
+ <div class="hero-card reveal active">
+ <div class="hero-card-badge">Вузы Чехии</div>
+ <h3 class="hero-card-title"><span class="text-red">Обучение на чешском языке в госвузах Чехии — без платы за обучение</span></h3>
+ <p class="hero-card-desc">Условия зависят от программы и статуса студента. Примеры государственных вузов:</p>
+ <ul class="uni-list">
+ <li>
+ <div class="check-icon">✓</div>
+ <div>
+ <strong><a href="https://cuni.cz" target="_blank" rel="noopener noreferrer" class="uni-link">Карлов университет (Univerzita Karlova, Прага)</a></strong>
+ <small>Основан в 1348 г. Медицина; Право; IT; Гуманитарные Науки</small>
+ </div>
+ </li>
+ <li>
+ <div class="check-icon">✓</div>
+ <div>
+ <strong><a href="https://vse.cz" target="_blank" rel="noopener noreferrer" class="uni-link">Пражский экономический университет (VŠE, Прага)</a></strong>
+ <small>Основан в 1953 г. Финансы; Бизнес; Международная Торговля; Аналитика Данных</small>
+ </div>
+ </li>
+ <li>
+ <div class="check-icon">✓</div>
+ <div>
+ <strong><a href="https://cvut.cz" target="_blank" rel="noopener noreferrer" class="uni-link">Чешский технический университет (ČVUT, Прага)</a></strong>
+ <small>Один из старейших технических вузов Европы. Архитектура; Инженерия; Робототехника; IT</small>
+ </div>
+ </li>
+ <li>
+ <div class="check-icon">✓</div>
+ <div>
+ <strong><a href="https://ujep.cz" target="_blank" rel="noopener noreferrer" class="uni-link">Университет Яна Евангелисты Пуркине (UJEP, Усти-над-Лабем)</a></strong>
+ <small>Современный кампус в Усти-над-Лабем. Экономика; Дизайн; Машиностроение; Здравоохранение</small>
+ </div>
+ </li>
+ <li>
+ <div class="check-icon">✓</div>
+ <div>
+ <strong>Ещё 22 государственных вуза по всей Чехии</strong>
+ <small>Список с сайтами - в разделе «Вузы Чехии» ниже</small>
+ </div>
+ </li>
+ </ul>
+ </div>
+ </div>
+</section>
+
+<section id="universities">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2>Вузы Чехии: обучение на чешском языке</h2>
+      <p>Обучение на чешском языке в государственных университетах бесплатное по условиям программы. Нажмите на вуз, чтобы перейти на его официальный сайт.</p>
+    </div>
+
+    <div class="gallery-grid">
+
+      <a href="https://cuni.cz" target="_blank" rel="noopener noreferrer" class="uni-card-link">
+        <figure class="gallery-card reveal">
+          <img src="CZ10 (1).jpg" alt="Карлов университет в Праге (Каролинум)" loading="lazy">
+          <figcaption>
+            <h3>Карлов университет (Univerzita Karlova, Прага) </h3>
+            <p>Основан в 1348 г. Старейший университет Центральной Европы. Медицина и Фармация; Право; IT и Физико-Математические Науки; Экономика; Психология; Гуманитарные Науки.</p>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a href="https://vse.cz" target="_blank" rel="noopener noreferrer" class="uni-card-link">
+        <figure class="gallery-card reveal">
+          <img src="CZ9 (1).webp" alt="Пражский экономический университет VŠE" loading="lazy">
+          <figcaption>
+            <h3>Пражский экономический университет (VŠE, Прага) </h3>
+            <p>Основан в 1953 г. Финансы и Бухучёт; Международная Торговля; Менеджмент; Экономика и Аналитика данных.</p>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a href="https://cvut.cz" target="_blank" rel="noopener noreferrer" class="uni-card-link">
+        <figure class="gallery-card reveal">
+          <img src="CZ8 (1).jpg" alt="Кампус ČVUT и Национальная техническая библиотека в Праге" loading="lazy">
+          <figcaption>
+            <h3>Чешский технический университет (ČVUT, Прага) </h3>
+            <p>Основан в 1707 г. Одна из старейших технических школ Европы. IT и Искусственный Интеллект; Архитектура; Робототехника; Электротехника; Строительство.</p>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a href="https://muni.cz" target="_blank" rel="noopener noreferrer" class="uni-card-link">
+        <figure class="gallery-card reveal">
+          <img src="CZ7 (1).jpg" alt="Университетский кампус Масарикова университета в Брно" loading="lazy">
+          <figcaption>
+            <h3>Масариков университет (Masarykova univerzita, Брно) </h3>
+            <p>Основан в 1919 г. Один из крупнейших вузов Чехии, с собственной полярной станцией в Антарктиде. Медицина; IT; Право; Экономика; Биотехнологии; Социальные Науки.</p>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a href="https://ujep.cz" target="_blank" rel="noopener noreferrer" class="uni-card-link">
+        <figure class="gallery-card reveal">
+          <img src="CZ6 (1).jpg" alt="Современный кампус UJEP в Усти-над-Лабем" loading="lazy">
+          <figcaption>
+            <h3>Университет Я. Е. Пуркине (UJEP, Усти-над-Лабем) </h3>
+            <p>Основан в 1991 г. Современный кампус в Усти-над-Лабем, примерно в часе езды от Праги. Экономика и Менеджмент; Дизайн; Машиностроение; Здравоохранение; Экология; Педагогика.</p>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a href="https://jcu.cz" target="_blank" rel="noopener noreferrer" class="uni-card-link">
+        <figure class="gallery-card reveal">
+          <img src="CZ5 (1).jpg" alt="Южночешский университет в Ческе-Будеёвице" loading="lazy">
+          <figcaption>
+            <h3>Южночешский университет (Jihočeská univerzita, Ческе-Будеёвице) </h3>
+            <p>Основан в 1991 г. Сильный центр Биологии и Экологии. Экономика и Туризм; Медицина; Сельское Хозяйство; Педагогика.</p>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a href="https://upol.cz" target="_blank" rel="noopener noreferrer" class="uni-card-link">
+        <figure class="gallery-card reveal">
+          <img src="CZ4 (1).jpg" alt="Ректорат Университета Палацкого в Оломоуце" loading="lazy">
+          <figcaption>
+            <h3>Университет Палацкого (Univerzita Palackého, Оломоуц) </h3>
+            <p>Основан в 1573 г. Один из старейших университетов Чехии, известный Медициной и Стоматологией. Право; Естественные Науки; Филология; Педагогика.</p>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a href="https://osu.eu" target="_blank" rel="noopener noreferrer" class="uni-card-link">
+        <figure class="gallery-card reveal">
+          <img src="CZ3 (1).jpg" alt="Остравский университет в Остраве" loading="lazy">
+          <figcaption>
+            <h3>Остравский университет (Ostravská univerzita, Острава) </h3>
+            <p>Основан в 1991 г. Медицина; IT; Экономика; Педагогика; Изобразительное Искусство; Музыка; Гуманитарные Науки.</p>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a href="https://vut.cz" target="_blank" rel="noopener noreferrer" class="uni-card-link">
+        <figure class="gallery-card reveal">
+          <img src="CZ2 (1).webp" alt="Технический университет в Брно VUT" loading="lazy">
+          <figcaption>
+            <h3>Технический университет в Брно (VUT v Brně) </h3>
+            <p>Основан в 1899 г. Один из крупнейших технических университетов Чехии. IT и Кибербезопасность; Машиностроение; Электротехника; Архитектура; Химия; Бизнес.</p>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a href="https://zcu.cz" target="_blank" rel="noopener noreferrer" class="uni-card-link">
+        <figure class="gallery-card reveal">
+          <img src="CZ1 (1).webp" alt="Западночешский университет в Пльзене" loading="lazy">
+          <figcaption>
+            <h3>Западночешский университет (ZČU, Пльзень) </h3>
+            <p>Основан в 1991 г. Робототехника; Машиностроение; Электротехника; Право; Экономика; Здравоохранение; Дизайн. Расположен в Пльзене.</p>
+          </figcaption>
+        </figure>
+      </a>
+
+    </div>
+
+ 
+<div class="reveal other-unis">
+  <h3>✓ Другие государственные вузы Чехии (всего 26 госвузов)</h3>
+  <ul style="list-style: none; padding-left: 0; margin: 14px 0 0 0; display: flex; flex-direction: column; gap: 10px;">
+    <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Химико-технологический университет</strong> (<a href="https://www.vscht.cz" target="_blank" rel="noopener noreferrer" class="uni-link">VŠCHT, Прага</a>) — Химия и Пищевые Технологии;</li>
+    <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Чешский аграрный университет</strong> (<a href="https://www.czu.cz" target="_blank" rel="noopener noreferrer" class="uni-link">ČZU, Прага</a>) — Агрономия, Экология, Экономика;</li>
+    <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Университет Менделя</strong> (<a href="https://mendelu.cz" target="_blank" rel="noopener noreferrer" class="uni-link">MENDELU, Брно</a>) — Агрономия, Лесное Хозяйство, Экономика;</li>
+    <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Технический университет Остравы</strong> (<a href="https://www.vsb.cz/cs/" target="_blank" rel="noopener noreferrer" class="uni-link">VŠB-TUO, Острава</a>) — IT, Энергетика, Машиностроение, Экономика;</li>
+    <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Университет Томаша Бати</strong> (<a href="https://utb.cz" target="_blank" rel="noopener noreferrer" class="uni-link">UTB, Злин</a>) — Дизайн и Мультимедиа, Экономика, Полимеры и Технологии;</li>
+    <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Университет Пардубице</strong> (<a href="https://upce.cz" target="_blank" rel="noopener noreferrer" class="uni-link">UPCE, Пардубице</a>) — Химия, Транспорт и Логистика, Экономика, Здравоохранение;</li>
+    <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Технический университет в Либерце</strong> (<a href="https://tul.cz" target="_blank" rel="noopener noreferrer" class="uni-link">TUL, Либерец</a>) — Нанотехнологии, Текстильная Инженерия, Архитектура, Мехатроника;</li>
+    <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Университет Градец-Кралове</strong> (<a href="https://uhk.cz" target="_blank" rel="noopener noreferrer" class="uni-link">UHK, Градец-Кралове</a>) — Информатика и Менеджмент, Педагогика, Философия;</li>
+    <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Силезский университет</strong> (<a href="https://slu.cz" target="_blank" rel="noopener noreferrer" class="uni-link">SU, Опава / Карвина</a>) — Бизнес и Предпринимательство, Математика, Философия;</li>
+    <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Ветеринарный университет</strong> (<a href="https://vetuni.cz" target="_blank" rel="noopener noreferrer" class="uni-link">VETUNI, Брно</a>) — Ветеринарная Медицина и Гигиена;</li>
+    <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Академия музыкальных искусств</strong> (<a href="https://amu.cz" target="_blank" rel="noopener noreferrer" class="uni-link">AMU, Прага</a>) — Кино (FAMU), Театр (DAMU), Музыка и Танец (HAMU);</li>
+    <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Академия изобразительных искусств</strong> (<a href="https://avu.cz" target="_blank" rel="noopener noreferrer" class="uni-link">AVU, Прага</a>) — Живопись, Скульптура, Графика, Архитектура;</li>
+    <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Высшая школа прикладного искусства</strong> (<a href="https://umprum.cz" target="_blank" rel="noopener noreferrer" class="uni-link">UMPRUM, Прага</a>) — Промышленный и Графический Дизайн, Мода;</li>
+    <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Академия исполнительских искусств им. Яначека</strong> (<a href="https://jamu.cz" target="_blank" rel="noopener noreferrer" class="uni-link">JAMU, Брно</a>) — Музыкальное и Театральное Искусство;</li>
+    <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Политехнический институт в Йиглаве</strong> (<a href="https://vspj.cz" target="_blank" rel="noopener noreferrer" class="uni-link">VŠPJ, Йиглава</a>) — Прикладная Информатика, Туризм, Финансы;</li>
+    <li><span style="color: #11457E; font-weight: 700; margin-right: 6px;">•</span> <strong>Технико-экономический институт</strong> (<a href="https://vstecb.cz" target="_blank" rel="noopener noreferrer" class="uni-link">VŠTE, Ческе-Будеёвице</a>) — Строительство, Логистика, Бизнес-Экономика.</li>
+  </ul>
+</div>
+
+ 
+ </div>
+</section>
+
+<section id="benefits" class="section-alt">
+ <div class="container">
+ <div class="section-header reveal">
+  <div class="ben-kicker">Обучение в Чехии: возможность, которая открывает двери в Европу</div>
+ <h2>Почему стоит начать учить чешский в Ереване?</h2>
+ <p>Языковые курсы при вузах в Чехии стоят несколько тысяч евро за учебный год, не считая проживания в Праге. Подготовка дома, в Ереване, обходится существенно дешевле. Расчёт - в калькуляторе ниже.</p>
+ </div>
+ <div class="grid-3">
+ <div class="card reveal">
+<div class="card-icon">🏛️</div>
+<h3>Европейское качество и лучшие профессора</h3>
+<p>В Университетах Чехии преподают ведущие учёные и практики ЕС и мира. Фундаментальные знания и чешский диплом, признаваемый во всех странах мира, станут надёжной опорой в жизни.</p>
+
+ </div>
+ <div class="card reveal">
+   <div class="card-icon">🇨🇿</div>
+  <h3>Бесплатное обучение и свобода в сердце Европы</h3>
+  <p>0 € за учёбу в государственных вузах, стипендии, путешествия без границ и право свободно выбирать страну для жизни и карьеры во всем мире.</p>
+
+ </div>
+ <div class="card reveal">
+ <div class="card-icon">✨</div>
+  <h3>Яркая молодость и окружение мечты</h3>
+  <p>Незабываемые студенческие годы в атмосфере старинной Европы, новые знакомства со всего света и друзья на всю жизнь среди будущих профессионалов.</p>
+ </div>
+ </div>
+ </div>
+</section>
+
+
+<section id="program" class="section-alt">
+
+ <div class="container">
+ <div class="section-header reveal">
+ <h2>Программа: от A0 до B2</h2>
+ <p>Занятия проходят 2 раза в неделю по 80 минут в удобных районах Еревана (Кентрон, Нор-Норк, Арабкир, Шенгавит) или онлайн.</p>
+ </div>
+ <div class="timeline">
+ 
+ 
+ 
+ 
+<div class="step-card reveal">
+  <span class="step-num">Модуль 1 · Уровень A1</span>
+  <h3>Живая речь и чистое произношение с первых уроков</h3>
+  <p>Постановка правильной чешской фонетики без акцента, снятие языкового барьера и уверенное общение в транспорте, кафе, банке и студенческом кампусе.</p>
+</div>
+
+<div class="step-card reveal">
+  <span class="step-num">Модуль 2 · Уровень A2</span>
+  <h3>Свободная грамматика без зубрёжки</h3>
+  <p>Логика чешских падежей и глаголов на базе общих славянских корней, чтение живых статей и уверенное понимание беглой речи носителей языка на слух.</p>
+</div>
+
+<div class="step-card reveal">
+  <span class="step-num">Модуль 3 · Уровень B1</span>
+  <h3>Свободное владение и жизнь в чешской среде</h3>
+  <p>Спонтанная речь, участие в дискуссиях и аргументация своей точки зрения. Просмотр чешских медиа, чтение прессы и решение любых бытовых и студенческих задач в Праге.</p>
+</div>
+
+<div class="step-card reveal">
+  <span class="step-num">Модуль 4 · Уровень B2</span>
+  <h3>Академический чешский для поступления в вуз</h3>
+  <p>Профильная лексика по специальности (экономика, IT, медицина, инженерия и другое), конспектирование лекций, написание эссе.</p>
+</div>
+ 
+
+ 
+ </div>
+ </div>
+</section>
+
+<section id="team">
+ <div class="container">
+ <div class="section-header reveal">
+ <h2>Кто ведёт занятия</h2>
+ <p>Опыт преподавания в пражских университетах и внимание к каждому ученику.</p>
+ </div>
+ <div class="team-grid">
+ <div class="leader-card reveal">
+ <div class="leader-role">Ведущий преподаватель и руководитель программы</div>
+ <h3 class="leader-name">Александр Шеметев, PhD</h3>
+ <p class="leader-sub">Исследователь и преподаватель Пражского экономического университета (VŠE, Прага)</p>
+ <div class="tag-row">
+ <span class="tag">PhD (Прага, ЕС)</span>
+ <span class="tag">Магистр CERGE-EI</span>
+ <span class="tag">Преподавание в VŠE на чешском и английском</span>
+ <span class="tag">Автор 12 книг</span>
+ <span class="tag">4 специализации Johns Hopkins Univ.</span>
+ </div>
+ <p style="color: var(--text-dark); font-size: 0.98rem;">Исследователь и преподаватель высшей школы в Чехии с опытом чтения университетских лекций и семинаров на чешском и английском языках. Знает, как устроен отбор в пражские вузы, и помогает выстроить понятный план подготовки.</p>
+ </div>
+ 
+ <section id="calculator">
+<div class="curator-card reveal">
+  <div class="curator-role">Честная математика поступления</div>
+  <h3 class="curator-title">Курсы в Праге или Старт в Ереване?</h3>
+
+  <table class="price-compare-table">
+    <thead>
+      <tr>
+        <th class="col-prague">Курсы в Праге (7-9 мес.)</th>
+        <th class="col-yerevan">У нас в Ереване <span class="yerevan-badge"><strong><font  size="3">Выгодно</font></strong></span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="col-prague">
+          <span class="price-label">Курсы при госвузах</span>
+          <span class="price-big-bad">5 000 - 8 500 € (1 978 000 AMD - 3 362 600 AMD)</span> за учебный год 7-9 мес. (без учета стоимости жилья)<br>
+          <font color="black">714 € - 1 215 € (282 459 AMD - 480 654 AMD) в месяц</font>
+        </td>
+        <td class="col-yerevan">
+          <span class="price-label">Стоимость обучения</span>
+          <span class="price-big-bad">10 000 - 15 000 AMD</span> в месяц<br>
+          (всего 25 € - 38 € за 1 мес.)
+        </td>
+      </tr>
+      <tr>
+        <td class="col-prague">
+          <span class="price-label">Частные школы в Праге</span>
+          <span class="price-big-bad">4 000 - 6 000 € (1 582 400 AMD - 2 373 600 AMD)</span> за учебный год 7-9 мес. (без учета стоимости жилья)<br>
+          <font color="black">571 € - 857 € (225 888 AMD - 339 030 AMD) в месяц </font>
+        </td>
+        <td class="col-yerevan">
+          <span class="price-label">Интенсивность и график</span>
+          <strong>2 раза в неделю по 1,5 часа</strong><br>
+          (12 академических часов в месяц)
+        </td>
+      </tr>
+      <tr>
+        <td class="col-prague">
+          <span class="price-label">Образование на Чешском языке <strong>БЕСПЛАТНОЕ</strong></span>
+            <br>
+          Образование на Английском языке - Платное
+        </td>
+        <td class="col-yerevan">
+          <span class="price-label">Проживание и время</span>
+          <strong>0 € лишних трат</strong> - ребёнок живёт дома и учится параллельно со школой
+        </td>
+      </tr>
+      <tr class="price-total-row">
+        <td class="col-prague">
+          <span class="price-label">Итого за год</span>
+          8 500 - 15 000 € (3 362 600 AMD - 5 934 000 AMD)<br>
+          <span style="font-weight: 500; font-size: 0.8rem;">+ потеря 1 года после школы</span>
+        </td>
+        <td class="col-yerevan">
+          <span class="price-big-bad">Итого за 9 месяцев</span>
+          90 000 - 135 000 AMD (227 € - 342 €)<br>
+         <span class="price-label"><font color="#FF0000" size="6">Экономия бюджета до 95%</font></span>
+
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="compare-note">
+    ✓ Занятия ведёт Преподаватель с многолетним опытом преподавания в университетах - вы получаете Академический Стандарт Чехии по цене локальных курсов в Ереване.
+  </p>
+</div>
+
+ 
+ 
+ </div>
+ </div>
+</section>
+
+<section id="booking" class="section-alt">
+ <div class="container">
+ <div class="booking-wrapper reveal">
+ <div>
+ <div class="eyebrow">Набор групп 2026/2027</div>
+ <h2 class="booking-title">Запишитесь на пробный урок-знакомство</h2>
+ <p class="booking-text">На пробной встрече мы познакомимся, определим стартовый уровень ученика, обсудим цели и подберём удобное расписание в вашем районе Еревана или онлайн.</p>
+ <div class="contacts-box">
+ <div class="contacts-title">Контакты в Ереване и Праге:</div>
+ <p>📞 <strong>Армения (WhatsApp / звонки):</strong> +374 55 77-57-86</p>
+ <p>📞 <strong>Чехия (WhatsApp):</strong> +420 601 004 075</p>
+ <p>✉️ <strong>Email:</strong> alexandershemetev@gmail.com</p>
+ </div>
+ </div>
+ <form onsubmit="sendToWhatsApp(event)">
+ <div class="form-group">
+ <label for="studentName">Имя ученика или родителя *</label>
+ <input type="text" id="studentName" class="form-control" placeholder="Например: Анна / Армен" required>
+ </div>
+ <div class="form-group">
+ <label for="studentGrade">Класс или текущий статус *</label>
+ <select id="studentGrade" class="form-control">
+ <option value="8–9 класс">8–9 класс (заблаговременная подготовка)</option>
+ <option value="10–11 класс">10–11 класс (подготовка к поступлению)</option>
+ <option value="Студент вуза">Студент (перевод или магистратура в Чехии)</option>
+ <option value="Взрослый">Взрослый (работа или переезд в Чехию)</option>
+ </select>
+ </div>
+ <div class="form-group">
+ <label for="district">Удобный район Еревана или формат</label>
+ <select id="district" class="form-control">
+ <option value="Кентрон (Центр)">Кентрон (Центр)</option>
+ <option value="Нор-Норк">Нор-Норк</option>
+ <option value="Арабкир">Арабкир</option>
+ <option value="Шенгавит / Эребуни (юг)">Шенгавит / Эребуни (у метро)</option>
+ <option value="Онлайн">Онлайн-группа</option>
+ </select>
+ </div>
+ <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 8px;">Отправить заявку в WhatsApp →</button>
+ <p class="form-note">Нажимая кнопку, вы перейдёте в WhatsApp с готовым текстом заявки</p>
+ </form>
+ </div>
+
+
+ 
+ </div>
+</section>
+
+<footer>
+ <div class="container">
+ <div class="footer-grid">
+ <div>
+ <div class="footer-brand">Český Start Yerevan</div>
+ <p style="max-width: 380px; font-size: 0.9rem;">Подготовка по чешскому языку в Ереване и онлайн для учёбы и работы в Чехии и других странах ЕС.</p>
+ </div>
+ <div class="footer-links">
+ <div class="footer-links-title">Связаться с нами</div>
+ <a href="https://wa.me/37455775786" target="_blank" rel="noopener">WhatsApp: +374 55 77-57-86</a>
+ <a href="mailto:alexandershemetev@gmail.com">alexandershemetev@gmail.com</a>
+ <a href="https://www.linkedin.com/in/alexshemetev" target="_blank" rel="noopener">Профиль преподавателя в LinkedIn</a>
+ </div>
+ </div>
+ <div class="footer-bottom">
+ <span>© 2026 Александр Шеметев (PhD, VŠE Prague). Ереван - Прага.</span>
+ <span><a href="index.html" style="color:inherit">RU</a> · <a href="english.html" style="color:inherit">EN</a> · <a href="armenian.html" style="color:inherit">HY</a></span>
+ </div>
+ </div>
+</footer>
+
+
+<script>
+ /* ----- B. Плавное появление блоков при прокрутке ----- */
+ const observer = new IntersectionObserver((entries) => {
+ entries.forEach(entry => {
+ if (entry.isIntersecting) entry.target.classList.add('active');
+ });
+ }, { threshold: 0.12 });
+ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+
+
+ /* ----- D. Заявка в WhatsApp без сервера ----- */
+ function sendToWhatsApp(e) {
+ e.preventDefault();
+ const name = document.getElementById('studentName').value.trim();
+ const grade = document.getElementById('studentGrade').value;
+ const district = document.getElementById('district').value;
+ const text =
+ `Здравствуйте, Александр! Хотел(а) бы записаться на пробный урок чешского языка в Ереване.\n` +
+ `• Имя: ${name}\n` +
+ `• Статус или класс: ${grade}\n` +
+ `• Удобный район или формат: ${district}`;
+ window.open(`https://wa.me/37455775786?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+ }
+</script>
+</body>
+</html>
